@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /content/
+Disallow: /scripts/
+Disallow: /templates/
+Sitemap: https://wangliarabia.com/sitemap.xml

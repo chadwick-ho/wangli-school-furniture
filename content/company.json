@@ -1,0 +1,297 @@
+{
+  "photos": [
+    {
+      "file": "factory-gate.jpg",
+      "title": "مدخل مصنع WangLi",
+      "caption": "واجهة المبنى ومدخل الموقع كما يظهران في الصورة المقدمة من WangLi.",
+      "category": "الموقع",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-cutting.jpg",
+      "title": "منطقة قطع المعادن",
+      "caption": "لقطة لمنطقة القطع داخل الورشة.",
+      "category": "الإنتاج",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-welding.jpg",
+      "title": "منطقة اللحام",
+      "caption": "لقطة لمنطقة اللحام داخل الورشة.",
+      "category": "الإنتاج",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-tube-bending.jpg",
+      "title": "منطقة ثني الأنابيب",
+      "caption": "معدات ومنطقة عمل لثني الأنابيب ضمن الصور المقدمة.",
+      "category": "الإنتاج",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-drilling.jpg",
+      "title": "منطقة الثقب",
+      "caption": "لقطة لمنطقة الثقب في الورشة.",
+      "category": "الإنتاج",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-warehouse.jpg",
+      "title": "المستودع",
+      "caption": "لقطة داخلية من مستودع المصنع.",
+      "category": "التخزين",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-lobby.jpg",
+      "title": "الردهة الداخلية",
+      "caption": "الردهة الداخلية في موقع WangLi.",
+      "category": "الموقع",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-showroom-entrance.jpg",
+      "title": "مدخل صالة العرض",
+      "caption": "المدخل المؤدي إلى منطقة عرض العينات.",
+      "category": "العينات",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-showroom-01.jpg",
+      "title": "صالة عرض الأثاث المدرسي",
+      "caption": "نماذج أثاث معروضة في صالة العينات.",
+      "category": "العينات",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-showroom-02.jpg",
+      "title": "تشكيلات من صالة العينات",
+      "caption": "صورة إضافية لتشكيلات الأثاث في صالة العينات.",
+      "category": "العينات",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-showroom-03.jpg",
+      "title": "خيارات معروضة للمراجعة",
+      "caption": "لقطة أخرى من منطقة عرض العينات.",
+      "category": "العينات",
+      "width": 1800,
+      "height": 900
+    },
+    {
+      "file": "factory-showroom-04.jpg",
+      "title": "منطقة عرض المنتجات",
+      "caption": "صورة من منطقة عرض منتجات WangLi.",
+      "category": "العينات",
+      "width": 1800,
+      "height": 900
+    }
+  ],
+  "certificates": [
+    {
+      "slug": "iso9001",
+      "title": "نظام إدارة الجودة — ISO 9001:2015",
+      "number": "06524Q01644R0S",
+      "issuer": "CFL Certification Center",
+      "issued": "2024-07-12",
+      "expires": "2027-07-11",
+      "scope": "إنتاج الطاولات والكراسي المعدنية وطاولات الطعام والأسرّة وطاولات المختبر المعدنية وفق النطاق المدون.",
+      "kind": "management",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-iso9001.jpg",
+          "preview": "certificate-iso9001-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "iso14001",
+      "title": "نظام الإدارة البيئية — ISO 14001:2015",
+      "number": "06524E00718R0S",
+      "issuer": "CFL Certification Center",
+      "issued": "2024-07-12",
+      "expires": "2027-07-11",
+      "scope": "الإنتاج والأنشطة الإدارية المرتبطة بالمنتجات المعدنية المذكورة في الوثيقة.",
+      "kind": "management",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-iso14001.jpg",
+          "preview": "certificate-iso14001-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "iso45001",
+      "title": "نظام إدارة السلامة والصحة المهنية — ISO 45001:2018",
+      "number": "06524S00689R0S",
+      "issuer": "CFL Certification Center",
+      "issued": "2024-07-12",
+      "expires": "2027-07-11",
+      "scope": "الإنتاج والأنشطة الإدارية المرتبطة بالمنتجات المعدنية المذكورة في الوثيقة.",
+      "kind": "management",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-iso45001.jpg",
+          "preview": "certificate-iso45001-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "fsc-coc",
+      "title": "وثيقة سلسلة الحيازة FSC®-COC",
+      "number": "RINA-COC-004207",
+      "issuer": "RINA Services S.p.A.",
+      "issued": "2024-09-11",
+      "expires": "2029-09-10",
+      "scope": "سلسلة الحيازة ومجموعات المنتجات المحددة في الوثيقة؛ يراجع بيان FSC في مستندات الطلب للمنتج المعني.",
+      "kind": "chain-of-custody",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-fsc-coc.jpg",
+          "preview": "certificate-fsc-coc-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "udem-study-desk",
+      "title": "وثيقة مطابقة لطاولات الدراسة — UDEM",
+      "number": "M.2024.206.C103497",
+      "issuer": "UDEM",
+      "issued": "2024-07-10",
+      "expires": "2029-07-09",
+      "scope": "Study Desk: WL-003, WL-005, WL-006, WL-007, WL-008.",
+      "kind": "product-document",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-udem-study-desk.jpg",
+          "preview": "certificate-udem-study-desk-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "udem-study-chair",
+      "title": "وثيقة مطابقة لكراسي الدراسة — UDEM",
+      "number": "M.2024.206.C103498",
+      "issuer": "UDEM",
+      "issued": "2024-07-10",
+      "expires": "2029-07-09",
+      "scope": "Study Chair: WL-025, WL-026, WL-027, WL-028, WL-029, WL-030.",
+      "kind": "product-document",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-udem-study-chair.jpg",
+          "preview": "certificate-udem-study-chair-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "cec-04227600",
+      "title": "شهادة الملصق البيئي الصيني — CEC 04227600",
+      "number": "CEC2025ELP04227600",
+      "issuer": "China Environmental United Certification Center",
+      "issued": "2025-03-31",
+      "expires": "2030-03-30",
+      "scope": "HJ 2547-2016؛ يرجع إلى الشهادة وملحقي نطاق المنتجات معًا.",
+      "kind": "product-document",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-cec-04227600.jpg",
+          "preview": "certificate-cec-04227600-preview.jpg",
+          "width": 750,
+          "height": 1061
+        },
+        {
+          "file": "certificate-cec-04227600-annex-1.jpg",
+          "preview": "certificate-cec-04227600-annex-1-preview.jpg",
+          "width": 750,
+          "height": 1061
+        },
+        {
+          "file": "certificate-cec-04227600-annex-2.jpg",
+          "preview": "certificate-cec-04227600-annex-2-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "cec-04227601",
+      "title": "شهادة الملصق البيئي الصيني — CEC 04227601",
+      "number": "CEC2025ELP04227601",
+      "issuer": "China Environmental United Certification Center",
+      "issued": "2025-03-31",
+      "expires": "2030-03-30",
+      "scope": "HJ 2547-2016؛ يرجع إلى الشهادة وملحقي نطاق المنتجات معًا.",
+      "kind": "product-document",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-cec-04227601.jpg",
+          "preview": "certificate-cec-04227601-preview.jpg",
+          "width": 750,
+          "height": 1061
+        },
+        {
+          "file": "certificate-cec-04227601-annex-1.jpg",
+          "preview": "certificate-cec-04227601-annex-1-preview.jpg",
+          "width": 750,
+          "height": 1061
+        },
+        {
+          "file": "certificate-cec-04227601-annex-2.jpg",
+          "preview": "certificate-cec-04227601-annex-2-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    },
+    {
+      "slug": "cqc-archive",
+      "title": "وثيقة CQC مؤرشفة",
+      "number": "CQC20703258978",
+      "issuer": "China Quality Certification Centre",
+      "issued": "2023-08-22",
+      "expires": "2026-07-30",
+      "scope": "وثيقة تاريخية تخص الأثاث التعليمي المعدني المذكور فيها. انتهت الفترة المدونة؛ تطلب نسخة محدثة عند الحاجة.",
+      "kind": "archive",
+      "holder": "Zhejiang Wangli Teaching Equipment Co., Ltd",
+      "files": [
+        {
+          "file": "certificate-cqc-archive.jpg",
+          "preview": "certificate-cqc-archive-preview.jpg",
+          "width": 750,
+          "height": 1061
+        }
+      ]
+    }
+  ]
+}
