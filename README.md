@@ -13,6 +13,8 @@ Arabic school furniture website for distributors and project supply companies in
 
 This repository contains public website files only. WordPress software, theme packages and internal planning files are maintained separately. The static site has no WordPress backend or inquiry form service.
 
+The homepage presents the China manufacturer identity, a supplied factory photograph, buyer-specific paths and links to factory, document and packing evidence within the first section. Edit `content/home.json` and `assets/home.css`; the build regenerates the section through `scripts/home.py`. Keyword datasets, competitor research, account details and API credentials are not included in the published artifact. Certificate scopes and archived documents remain explained on the document page.
+
 GitHub Actions builds Markdown articles on each main-branch push and deploys the website-only `_site` artifact to Pages. See [BLOG_EDITING.md](BLOG_EDITING.md) for article instructions. WordPress is not required for this deployment.
 
 The 26 reviewed core, category, Blog, article, factory, packing and document URLs allow search indexing and appear in the sitemap. Detailed product pages with outstanding specification reviews and thin Blog category archives retain noindex. A sitemap is available; this does not mean Google has indexed the site or that Search Console submission has occurred.

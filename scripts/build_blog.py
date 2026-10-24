@@ -14,6 +14,7 @@ from xml.etree.ElementTree import Element,SubElement,tostring
 import markdown
 from bs4 import BeautifulSoup
 import company
+import home
 
 ROOT=Path(__file__).resolve().parents[1]
 DOMAIN='https://wangliarabia.com'
@@ -137,6 +138,7 @@ def update_site():
         if path in content_routes:indexed.append(DOMAIN+path)
         if not doc.head.select_one('link[href="/assets/blog.css"]'):doc.head.append(doc.new_tag('link',rel='stylesheet',href='/assets/blog.css'))
         if path=='/':
+            home.integrate(doc,__import__(__name__))
             existing=doc.select_one('#wangli-latest-posts')
             if existing:existing.decompose()
             section=BeautifulSoup('<section id="wangli-latest-posts" class="wl-section wl-soft"><div class="wl-container"><p class="wl-eyebrow">من المدونة</p><h2>مقالات تساعدك قبل طلب التوريد</h2><div class="wl-blog-grid">'+''.join(card(p) for p in POSTS[:3])+'</div><p class="wl-blog-tools"><a href="/blog/">استعرض جميع المقالات ←</a></p></div></section>','html.parser')

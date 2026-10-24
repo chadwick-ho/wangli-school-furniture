@@ -1,0 +1,20 @@
+{
+  "kicker": "WangLi | مُصنِّع أثاث مدرسي في الصين",
+  "title": "أثاث مدرسي للموزعين وشركات التوريد",
+  "subtitle": "للشراء بالجملة ومشاريع المناقصات",
+  "description": "طاولات وكراسي مدرسية وكراسي محاضرات. أرسل الموديلات والكميات ووجهة الشحن لطلب عرض سعر من المصنع.",
+  "primary_cta": "اطلب عرض سعر",
+  "secondary_cta": "تصفّح المنتجات",
+  "distributor_label": "طلبات الموزعين",
+  "tender_label": "طلبات توريد المشاريع",
+  "factory_image": "factory-gate.jpg",
+  "factory_alt": "واجهة مصنع WangLi في الصين ومدخل الموقع",
+  "factory_caption": "مصنع WangLi في الصين · شاهد صور الإنتاج وصالات العرض",
+  "proof": [
+    {"title": "المصنع والإنتاج", "url": "/factory/", "image": "factory-welding.jpg", "alt": "ورشة اللحام في مصنع WangLi"},
+    {"title": "الوثائق والشهادات", "url": "/certificates/", "image": "certificate-iso9001-preview.jpg", "alt": "صورة وثيقة نظام إدارة الجودة مع نطاقها وتواريخها"},
+    {"title": "التعبئة والتحميل", "url": "/packing-and-shipping/", "image": "packing-pallet-staging-preview.jpg", "alt": "هياكل أثاث مغلفة ومجهزة على المنصات"}
+  ],
+  "seo_title": "أثاث مدرسي من الصين للموزعين وشركات التوريد | WangLi",
+  "seo_description": "WangLi مصنع أثاث مدرسي في الصين للموزعين وشركات توريد مشاريع المدارس. استعرض المنتجات وصور المصنع ووثائق الشركة والتعبئة، واطلب عرض سعر حسب متطلباتك."
+}

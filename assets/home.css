@@ -1,0 +1,23 @@
+/* Homepage evidence and buyer paths. No unverified sales claims or badge strip. */
+.wl-home-hero{background:#faf7f2;border-bottom:1px solid #e2ddd6;padding:36px 0 34px}
+.wl-home-grid{display:grid;grid-template-columns:1.05fr 1fr;grid-template-areas:"copy media" "proof media";gap:24px 40px;align-items:center}
+.wl-home-grid>.wp-block-group__inner-container{display:contents}
+.wl-home-copy{grid-area:copy;min-width:0}.wl-home-copy .wl-eyebrow{font-size:13px;margin:0 0 12px;color:#8d3c0c}
+.wl-home-copy h1{font-size:41px;line-height:1.55;letter-spacing:0;margin:0 0 10px;max-width:620px}
+.wl-home-subtitle{font-size:18px;font-weight:600;margin:0 0 10px;line-height:1.8}
+.wl-home-description{font-size:15px;line-height:1.95;color:#5c6266;margin:0;max-width:550px}
+.wl-home-actions{gap:12px;margin:20px 0 10px}.wl-home-actions .wp-block-button__link{font-size:14px;min-height:48px;padding:11px 23px}
+.wl-home-buyers{font-size:12px;color:#65696c;margin:0}.wl-home-buyers a{display:inline-flex;align-items:center;min-height:36px;text-decoration:underline;text-underline-offset:4px}
+.wl-home-proof{grid-area:proof;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;align-self:start;min-width:0}
+.wl-home-proof>.wp-block-group__inner-container{display:contents}
+.wl-home-proof-item{display:grid;grid-template-columns:37px minmax(0,1fr);align-items:center;gap:8px;background:#fff;border:1px solid #e2ddd6;border-radius:4px;padding:9px;min-width:0}
+.wl-home-proof-item>.wp-block-group__inner-container{display:contents}
+.wl-home-proof-item .wp-block-image{margin:0}.wl-home-proof-item img{display:block;width:37px;height:54px;object-fit:contain;background:#f6f4f1;border-radius:2px}
+.wl-home-proof-item p{font-size:12px;line-height:1.7;margin:0;font-weight:600}.wl-home-proof-item a{min-height:44px;display:flex;align-items:center;gap:4px}.wl-home-proof-item a:hover{text-decoration:underline}
+.wl-home-media{grid-area:media;min-width:0;background:#fff;border:1px solid #e2ddd6;border-radius:5px;overflow:hidden;align-self:center;display:flex;flex-direction:column;justify-content:center}
+.wl-home-media>.wp-block-group__inner-container{display:contents}
+.wl-home-media .wp-block-image{margin:0}.wl-home-media .wp-block-image a{display:block}.wl-home-media img{display:block;width:100%;height:300px;object-fit:cover;object-position:center}
+.wl-home-media p{font-size:12px;line-height:1.9;margin:0;padding:13px 18px;color:#65696c}.wl-home-media p a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1100px){.wl-home-grid{gap:22px 28px}.wl-home-copy h1{font-size:36px}.wl-home-proof-item{grid-template-columns:1fr;gap:5px;padding:8px}.wl-home-proof-item .wp-block-image{display:none}.wl-home-proof-item p{font-size:12px;text-align:center}.wl-home-proof-item a{justify-content:center}.wl-home-media img{height:300px}}
+@media(max-width:800px){.wl-home-hero{padding:26px 0}.wl-home-grid{grid-template-columns:1fr;grid-template-areas:"copy" "proof" "media";gap:17px}.wl-home-copy h1{font-size:33px;line-height:1.6;max-width:650px}.wl-home-copy .wl-eyebrow{margin-bottom:8px}.wl-home-subtitle{font-size:16px;margin-bottom:7px}.wl-home-description{font-size:14px;line-height:1.9;max-width:650px}.wl-home-actions{margin:16px 0 7px}.wl-home-buyers{font-size:12px}.wl-home-media img{height:230px;object-position:center 60%}.wl-home-media p{font-size:11px;padding:9px 12px}.wl-home-proof-item{grid-template-columns:32px minmax(0,1fr);gap:6px;padding:7px}.wl-home-proof-item .wp-block-image{display:block}.wl-home-proof-item img{width:32px;height:44px}.wl-home-proof-item p{font-size:11px;text-align:start}.wl-home-proof-item a{justify-content:start}}
+@media(max-width:440px){.wl-home-hero{padding:22px 0}.wl-home-grid{gap:14px}.wl-home-copy h1{font-size:29px;line-height:1.55;margin-bottom:8px}.wl-home-copy .wl-eyebrow{font-size:11px}.wl-home-subtitle{font-size:15px}.wl-home-description{font-size:13px;line-height:1.85}.wl-home-actions{gap:10px;margin:14px 0 4px}.wl-home-actions .wp-block-button__link{font-size:12px;padding:10px 18px;min-height:44px}.wl-home-proof{gap:6px}.wl-home-proof-item{grid-template-columns:1fr;padding:6px}.wl-home-proof-item .wp-block-image{display:none}.wl-home-proof-item p{font-size:11px;text-align:center}.wl-home-proof-item a{justify-content:center}.wl-home-media img{height:180px}.wl-home-buyers{font-size:11px}}
