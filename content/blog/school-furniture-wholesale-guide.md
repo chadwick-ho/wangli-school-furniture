@@ -7,8 +7,10 @@
   "description": "دليل شراء أثاث مدرسي بالجملة للموزعين: قارن الموديلات والمواصفات والعينات والتعبئة وشروط العرض، وجهز طلب تسعير واضحًا لسوقك.",
   "category": "wholesale",
   "published": "2026-10-23T22:55:50+08:00",
-  "image": "856f40bba4-catalog-student-chairs-detail.jpg",
-  "image_alt": "نماذج كراسي الطلاب في كتالوج WangLi",
+  "image": "iraq-packed-pallets-preview.jpg",
+  "image_alt": "مكونات أثاث مغلفة على منصات مع كراتين في منطقة التجهيز لدى WangLi",
+  "image_caption": "صورة من مواد التعبئة المقدمة من WangLi ضمن ملف العراق. تؤكد تفاصيل التعبئة لكل طلب في عرض السعر الخاص به.",
+  "image_kind": "photo",
   "draft": false
 }
 -->

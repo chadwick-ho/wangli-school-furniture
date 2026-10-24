@@ -7,8 +7,10 @@
   "description": "قائمة عملية لمراجعة مواصفات الأثاث المدرسي للمناقصات: جدول الكميات، المقاسات، المواد، العينات والتعبئة، قبل طلب عرض سعر من المورد.",
   "category": "tenders",
   "published": "2026-10-23T22:55:50+08:00",
-  "image": "0bd9547d1c-catalog-classroom-detail.jpg",
-  "image_alt": "طاولات وكراسٍ مدرسية من كتالوج WangLi",
+  "image": "factory-showroom-01.jpg",
+  "image_alt": "نماذج طاولات وكراسٍ وأثاث تعليمي في صالة عرض WangLi",
+  "image_caption": "نماذج من صالة عرض WangLi لمقارنة الأصناف. الصورة ليست توثيقًا لتنفيذ مناقصة بعينها.",
+  "image_kind": "photo",
   "draft": false
 }
 -->
