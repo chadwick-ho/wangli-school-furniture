@@ -293,5 +293,262 @@
         }
       ]
     }
+  ],
+  "additional_factory_photos": [
+    {
+      "file": "factory-seat-components.jpg",
+      "preview": "factory-seat-components-preview.jpg",
+      "title": "مقاعد قبل التجميع",
+      "caption": "مقاعد بلاستيكية مرتبة داخل منطقة الإنتاج.",
+      "group": "factory",
+      "width": 1800,
+      "height": 1200,
+      "preview_width": 900,
+      "preview_height": 600
+    },
+    {
+      "file": "factory-metal-frame-line.jpg",
+      "preview": "factory-metal-frame-line-preview.jpg",
+      "title": "هياكل معدنية في الورشة",
+      "caption": "هياكل معدنية معلقة ومجمعة في منطقة الإنتاج.",
+      "group": "factory",
+      "width": 1800,
+      "height": 1200,
+      "preview_width": 900,
+      "preview_height": 600
+    },
+    {
+      "file": "factory-frame-preparation.jpg",
+      "preview": "factory-frame-preparation-preview.jpg",
+      "title": "تجهيز الهياكل المعدنية",
+      "caption": "منظر إضافي للهياكل قيد التجهيز داخل الورشة.",
+      "group": "factory",
+      "width": 1800,
+      "height": 1200,
+      "preview_width": 900,
+      "preview_height": 600
+    },
+    {
+      "file": "factory-carton-storage.jpg",
+      "preview": "factory-carton-storage-preview.jpg",
+      "title": "تخزين الكراتين",
+      "caption": "كراتين مرتبة داخل المستودع.",
+      "group": "factory",
+      "width": 1800,
+      "height": 1200,
+      "preview_width": 900,
+      "preview_height": 600
+    }
+  ],
+  "shipping_photos": [
+    {
+      "file": "iraq-container-loading-01.jpg",
+      "preview": "iraq-container-loading-01-preview.jpg",
+      "title": "حاوية محملة — ملف العراق",
+      "caption": "صورة لحاوية محملة من ملف تجهيزات العراق.",
+      "group": "iraq",
+      "width": 1279,
+      "height": 1706,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "iraq-container-loading-02.jpg",
+      "preview": "iraq-container-loading-02-preview.jpg",
+      "title": "ترتيب الحمولة — ملف العراق",
+      "caption": "منظر آخر لترتيب الحمولة داخل حاوية من ملف العراق.",
+      "group": "iraq",
+      "width": 1279,
+      "height": 1706,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "iraq-furniture-frames-01.jpg",
+      "preview": "iraq-furniture-frames-01-preview.jpg",
+      "title": "تجهيز هياكل الأثاث",
+      "caption": "هياكل مرتبة في منطقة التجهيز ضمن صور ملف العراق.",
+      "group": "iraq",
+      "width": 1080,
+      "height": 1440,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "iraq-furniture-frames-02.jpg",
+      "preview": "iraq-furniture-frames-02-preview.jpg",
+      "title": "ترتيب الهياكل قبل التعبئة",
+      "caption": "منظر إضافي للهياكل المرتبة في منطقة العمل.",
+      "group": "iraq",
+      "width": 1080,
+      "height": 1440,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "iraq-wrapped-components.jpg",
+      "preview": "iraq-wrapped-components-preview.jpg",
+      "title": "مكونات مغلفة على منصة",
+      "caption": "مكونات أثاث مغلفة وموضوعة على منصة خشبية ضمن ملف العراق.",
+      "group": "iraq",
+      "width": 1366,
+      "height": 1024,
+      "preview_width": 900,
+      "preview_height": 675
+    },
+    {
+      "file": "iraq-furniture-frames-03.jpg",
+      "preview": "iraq-furniture-frames-03-preview.jpg",
+      "title": "تفاصيل الهياكل المجهزة",
+      "caption": "صورة أقرب للهياكل المرتبة في منطقة التجهيز.",
+      "group": "iraq",
+      "width": 1080,
+      "height": 1440,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "iraq-furniture-frames-04.jpg",
+      "preview": "iraq-furniture-frames-04-preview.jpg",
+      "title": "منطقة تجهيز الهياكل",
+      "caption": "صفوف من هياكل الأثاث في منطقة العمل ضمن صور ملف العراق.",
+      "group": "iraq",
+      "width": 1080,
+      "height": 1440,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "iraq-packed-pallets.jpg",
+      "preview": "iraq-packed-pallets-preview.jpg",
+      "title": "منصات وكراتين مغلفة",
+      "caption": "منصات من المكونات المغلفة وكراتين مرتبة داخل المستودع.",
+      "group": "iraq",
+      "width": 1800,
+      "height": 799,
+      "preview_width": 900,
+      "preview_height": 400
+    },
+    {
+      "file": "packing-cartons-on-pallet.jpg",
+      "preview": "packing-cartons-on-pallet-preview.jpg",
+      "title": "كراتين على منصة خشبية",
+      "caption": "تجميع كراتين القطع على منصة للمناولة.",
+      "group": "packaging",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "packing-moving-wrapped-frames.jpg",
+      "preview": "packing-moving-wrapped-frames-preview.jpg",
+      "title": "نقل الهياكل المغلفة",
+      "caption": "مناولة هياكل مغلفة في منطقة التجهيز.",
+      "group": "packaging",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "packing-wrapped-frames.jpg",
+      "preview": "packing-wrapped-frames-preview.jpg",
+      "title": "هياكل مغلفة ومرتبة",
+      "caption": "هياكل محمية بالتغليف ومرتبة على منصات.",
+      "group": "packaging",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "packing-components-and-cartons.jpg",
+      "preview": "packing-components-and-cartons-preview.jpg",
+      "title": "مكونات وكراتين مجمعة",
+      "caption": "ترتيب مكونات الأثاث والكراتين معًا في منطقة العمل.",
+      "group": "packaging",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "packing-protected-parts.jpg",
+      "preview": "packing-protected-parts-preview.jpg",
+      "title": "أجزاء مغلفة على منصة",
+      "caption": "أجزاء منفصلة محمية بالتغليف ومرتبة على منصة خشبية.",
+      "group": "packaging",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "packing-pallet-staging.jpg",
+      "preview": "packing-pallet-staging-preview.jpg",
+      "title": "منصات الأثاث المغلف",
+      "caption": "منصات من الهياكل المغلفة في منطقة التجهيز.",
+      "group": "packaging",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "shipping-container-staging.jpg",
+      "preview": "shipping-container-staging-preview.jpg",
+      "title": "تجهيز الكراتين قرب الحاوية",
+      "caption": "كراتين مرتبة بجوار حاوية في منطقة التحميل.",
+      "group": "loading",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "shipping-forklift-pallet.jpg",
+      "preview": "shipping-forklift-pallet-preview.jpg",
+      "title": "مناولة المنصات بالرافعة",
+      "caption": "رفع منصة من المكونات المغلفة قرب الحاوية.",
+      "group": "loading",
+      "width": 1800,
+      "height": 1350,
+      "preview_width": 900,
+      "preview_height": 675
+    },
+    {
+      "file": "shipping-loading-frames.jpg",
+      "preview": "shipping-loading-frames-preview.jpg",
+      "title": "تحميل الهياكل داخل الحاوية",
+      "caption": "صورة من مناولة الهياكل في مدخل الحاوية.",
+      "group": "loading",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "shipping-loading-area.jpg",
+      "preview": "shipping-loading-area-preview.jpg",
+      "title": "منطقة التحميل",
+      "caption": "منظر عام لمنطقة المناولة والحاوية عند المصنع.",
+      "group": "loading",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    },
+    {
+      "file": "shipping-carton-loading.jpg",
+      "preview": "shipping-carton-loading-preview.jpg",
+      "title": "ترتيب الكراتين داخل الحاوية",
+      "caption": "صورة من عملية إدخال الكراتين إلى الحاوية.",
+      "group": "loading",
+      "width": 1350,
+      "height": 1800,
+      "preview_width": 675,
+      "preview_height": 900
+    }
   ]
 }

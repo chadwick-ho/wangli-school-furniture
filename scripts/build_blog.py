@@ -118,7 +118,7 @@ def render_blog():
 def update_site():
     # Selected reviewed pages can enter search. Detailed product pages retain
     # their previous noindex status while specification questions remain open.
-    content_routes={'/','/products/','/about-wangli/','/factory/','/certificates/','/school-furniture-wholesale/','/school-furniture-tender-supply/','/school-furniture-solutions/','/school-furniture-catalog/','/blog/'}|{p['path'] for p in POSTS}
+    content_routes={'/','/products/','/about-wangli/','/factory/','/packing-and-shipping/','/certificates/','/school-furniture-wholesale/','/school-furniture-tender-supply/','/school-furniture-solutions/','/school-furniture-catalog/','/blog/'}|{p['path'] for p in POSTS}
     categories={'classroom','lecture','student-chairs','cafeteria','dormitory','storage','teacher-desks','office','laboratory','whiteboards','auditorium','kindergarten'}
     content_routes|={'/products/'+c+'/' for c in categories}
     indexed=[]

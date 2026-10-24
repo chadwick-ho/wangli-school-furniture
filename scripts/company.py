@@ -4,7 +4,7 @@ from html import escape as e
 from bs4 import BeautifulSoup
 
 def photo(p):
-    return '<figure class="wl-factory-photo"><a href="/assets/'+p['file']+'" target="_blank" rel="noopener"><img src="/assets/'+p['file']+'" width="1800" height="900" loading="lazy" decoding="async" alt="'+e(p['title'],quote=True)+'"></a><figcaption><h3>'+p['title']+'</h3><p>'+p['caption']+'</p></figcaption></figure>'
+    return '<figure class="wl-factory-photo"><a href="/assets/'+p['file']+'" target="_blank" rel="noopener" aria-label="'+e(p['title']+' — افتح الصورة الكبيرة',quote=True)+'"><img src="/assets/'+p.get('preview',p['file'])+'" width="'+str(p.get('preview_width',p['width']))+'" height="'+str(p.get('preview_height',p['height']))+'" loading="lazy" decoding="async" alt="'+e(p['title'],quote=True)+'"></a><figcaption><h3>'+e(p['title'])+'</h3><p>'+e(p['caption'])+'</p></figcaption></figure>'
 
 def document(c):
     images=''
@@ -22,13 +22,15 @@ def section(title,content,cls=''):
     return '<section class="wl-section '+cls+'"><div class="wl-container"><h2>'+title+'</h2>'+content+'</div></section>'
 
 def links():
-    return '<p class="wl-company-links"><a href="/factory/">جولة في المصنع</a><a href="/certificates/">الشهادات والوثائق</a><a href="/request-a-quote/">اطلب ملفًا لمشروعك</a></p>'
+    return '<p class="wl-company-links"><a href="/factory/">جولة في المصنع</a><a href="/packing-and-shipping/">التعبئة والتحميل</a><a href="/certificates/">الشهادات والوثائق</a><a href="/request-a-quote/">اطلب ملفًا لمشروعك</a></p>'
 
 def render_company(builder):
     data=json.loads((builder.ROOT/'content/company.json').read_text(encoding='utf-8'))
     photos=data['photos'];certs=data['certificates']
     hero='<section class="wl-company-hero"><div class="wl-container wl-company-hero-grid"><div><p class="wl-eyebrow">WANGLI · من داخل المصنع</p><h1>مصنع الأثاث المدرسي: صور من الموقع</h1><p class="wl-lead">تعرف على موقع WangLi وورش تشغيل المعادن والمستودع وصالات عرض الأثاث المدرسي، قبل تجهيز طلب الشراء أو عرض توريد المشروع.</p>'+links()+'</div><img src="/assets/factory-gate.jpg" alt="واجهة مصنع WangLi ومدخل الموقع" width="1800" height="900" fetchpriority="high" decoding="async"></div></section>'
     main=hero+section('ورش الإنتاج والمستودع','<p class="wl-section-intro">صور من مناطق القطع واللحام وثني الأنابيب والثقب والتخزين. حدد الموديلات والكميات المطلوبة لطلب معلومات الإنتاج والتعبئة الخاصة بطلبك.</p><div class="wl-factory-grid">'+''.join(photo(p) for p in photos[1:6])+'</div>')
+    if data.get('additional_factory_photos'):
+        main+=section('من تجهيز المكونات إلى تخزين الكراتين','<p class="wl-section-intro">صور إضافية للمقاعد قبل التجميع والهياكل المعدنية والكراتين داخل المصنع.</p><div class="wl-factory-grid wl-photo-grid">'+''.join(photo(p) for p in data['additional_factory_photos'])+'</div>','wl-soft')
     main+=section('الاستقبال وصالات العرض','<p class="wl-section-intro">استعرض نماذج من الطاولات والكراسي والأسرّة والأثاث التعليمي في صالات عرض WangLi.</p><div class="wl-factory-grid">'+''.join(photo(p) for p in photos[6:])+'</div>','wl-soft')
     main+=section('جهز طلبك مع فريق WangLi','<p>للموزعين: أرسل فئات المنتجات والموديلات والكميات وبلد الوصول. ولشركات توريد المشاريع: أرفق جدول الكميات والمواصفات والوثائق المطلوبة للمراجعة.</p>'+links())
     builder.page('/factory/','مصنع الأثاث المدرسي WangLi | صور الإنتاج وصالات العرض','صور حقيقية من مصنع WangLi تشمل ورش تشغيل المعادن والمستودع وصالات العرض، للموزعين وشركات توريد الأثاث المدرسي في الأسواق العربية.',main)
@@ -38,7 +40,18 @@ def render_company(builder):
     main+=section('أرشيف الوثائق','<div class="wl-doc-grid">'+''.join(document(c) for c in certs if c['kind']=='archive')+'</div>')
     main+=section('وثائق لمراجعة متطلبات المناقصة','<p>أرسل قائمة الشهادات والمعايير والموديلات المطلوبة مع جدول الكميات، واطلب نسخًا واضحة والتحقق من الحالة الحالية للوثائق قبل اعتماد ملف العرض.</p>'+links(),'wl-soft')
     builder.page('/certificates/','شهادات ووثائق WangLi للأثاث المدرسي | نطاق الوثائق وصورها','وثائق ISO 9001 وISO 14001 وISO 45001 وFSC ووثائق منتجات WangLi مع الصور الأصلية والأرقام ونطاق الوثيقة والفترة المدونة فيها.',main)
-    for route,image,title in [('factory','factory-gate.jpg','مصنع WangLi'),('certificates','certificate-iso9001-preview.jpg','الشهادات والوثائق')]:
+    shipping=data.get('shipping_photos',[])
+    if shipping:
+        intro='<section class="wl-company-hero"><div class="wl-container wl-company-hero-grid"><div><p class="wl-eyebrow">WANGLI · تجهيز طلبات التوريد</p><h1>تعبئة الأثاث المدرسي وتحميل الحاويات</h1><p class="wl-lead">استعرض صورًا من تجهيز المكونات وتغليف الهياكل ومناولة المنصات وتحميل الحاويات، مع مجموعة صور من ملف العراق.</p><p>للموزعين وشركات توريد المشاريع: أرسل الموديلات والكميات وبلد الوجهة والميناء المطلوب لمراجعة التعبئة وترتيب التحميل الخاص بطلبك.</p><nav class="wl-blog-topics" aria-label="أقسام صور التعبئة"><a href="#packaging">التعبئة والمنصات</a><a href="#loading">تحميل الحاويات</a><a href="#iraq">صور ملف العراق</a></nav></div><img src="/assets/packing-pallet-staging-preview.jpg" alt="منصات من هياكل الأثاث المغلفة في منطقة التجهيز" width="675" height="900" fetchpriority="high" decoding="async"></div></section>'
+        main=intro
+        groups=[('packaging','التعبئة وترتيب المنصات','صور للكراتين والمكونات المنفصلة والهياكل المغلفة أثناء التجهيز والمناولة.'),('loading','التحميل ومناولة الحاويات','صور من منطقة التحميل واستخدام الرافعات في مناولة المنصات والكراتين.'),('iraq','صور من ملف تجهيزات العراق','مجموعة من صور تجهيز الهياكل وتغليف المكونات وترتيب الحمولات في ملف العراق لدى WangLi.')]
+        for group,title,description in groups:
+            main+='<section id="'+group+'" class="wl-section'+(' wl-soft' if group=='loading' else '')+'"><div class="wl-container"><h2>'+title+'</h2><p class="wl-section-intro">'+description+'</p><div class="wl-factory-grid wl-photo-grid">'+''.join(photo(p) for p in shipping if p['group']==group)+'</div></div></section>'
+        main+=section('ما المعلومات اللازمة لمراجعة التعبئة والتحميل؟','<p>حدد الموديل والكمية ومقاسات المكونات والوجهة ومتطلبات الاستلام. اطلب توضيح عدد القطع في الكرتون وأبعاده ووزنه وطريقة حماية الأجزاء وترتيب المنصات ضمن عرض السعر الخاص بطلبك.</p><p>إذا كنت تجهز ملف مناقصة، أرفق متطلبات ترقيم الكراتين والملصقات والتسليم للمراجعة قبل اعتماد الطلب.</p>'+links(),'wl-soft')
+        builder.page('/packing-and-shipping/','تعبئة الأثاث المدرسي وتحميل الحاويات | صور WangLi','صور تعبئة الأثاث المدرسي وترتيب المنصات وتحميل الحاويات لدى WangLi، مع صور من ملف العراق ومعلومات تجهيز الطلب للموزعين وشركات توريد المشاريع.',main)
+    routes=[('factory','factory-gate.jpg','مصنع WangLi'),('certificates','certificate-iso9001-preview.jpg','الشهادات والوثائق')]
+    if shipping:routes.append(('packing-and-shipping','packing-pallet-staging-preview.jpg','التعبئة والتحميل'))
+    for route,image,title in routes:
         file=builder.ROOT/route/'index.html';doc=BeautifulSoup(file.read_text(encoding='utf-8'),'html.parser')
         for meta in doc.select('meta[property="og:image"],meta[name="twitter:image"]'):meta['content']=builder.DOMAIN+'/assets/'+image
         script=doc.find('script',type='application/ld+json');schema=json.loads(script.string)
