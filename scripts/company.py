@@ -24,6 +24,26 @@ def section(title,content,cls=''):
 def links():
     return '<p class="wl-company-links"><a href="/factory/">جولة في المصنع</a><a href="/packing-and-shipping/">التعبئة والتحميل</a><a href="/certificates/">الشهادات والوثائق</a><a href="/request-a-quote/">اطلب ملفًا لمشروعك</a></p>'
 
+def factory_visit(data):
+    photos=data['factory_visit_photos']
+    hero=next(p for p in photos if p['file']==data['factory_visit_hero'])
+    main='<section class="wl-company-hero"><div class="wl-container wl-company-hero-grid"><div><p class="wl-eyebrow">WANGLI · من داخل المصنع</p><h1>مصنع الأثاث المدرسي: صور من الموقع</h1><p class="wl-lead">تجول بالصور في المصنع وورش تشغيل المعادن والمستودع وصالة العينات. قارن نماذج الأثاث وحدد الموديلات المطلوبة لطلبك أو مشروع التوريد.</p>'+links()+'</div><figure class="wl-factory-visit-hero"><a href="/assets/'+hero['file']+'" target="_blank" rel="noopener"><img src="/assets/'+hero['preview']+'" alt="'+e(hero['title'],quote=True)+'" width="'+str(hero['preview_width'])+'" height="'+str(hero['preview_height'])+'" fetchpriority="high" decoding="async"><span>مدخل مصنع WangLi · افتح الصورة الكبيرة ↗</span></a></figure></div></section>'
+    nav=''.join('<a href="#factory-visit-'+g['id']+'">'+e(g['title'])+'</a>' for g in data['factory_visit_groups'])
+    main+='<div class="wl-container wl-factory-jump"><nav aria-label="أقسام جولة المصنع">'+nav+'</nav></div>'
+    for n,g in enumerate(data['factory_visit_groups']):
+        group=[photos[i] for i in g['order']]
+        visible=g['visible']
+        grid='wl-factory-grid'+(' wl-photo-grid' if visible>=3 else '')
+        body='<div class="'+grid+'">'+''.join(photo(p) for p in group[:visible])+'</div>'
+        if len(group)>visible:
+            body+='<details class="wl-factory-more"><summary>شاهد باقي صور هذا القسم ('+str(len(group)-visible)+')</summary><div class="wl-factory-grid wl-photo-grid">'+''.join(photo(p) for p in group[visible:])+'</div></details>'
+        main+='<section id="factory-visit-'+g['id']+'" class="wl-section'+(' wl-soft' if n%2 else '')+'"><div class="wl-container"><h2>'+e(g['title'])+'</h2><p class="wl-section-intro">'+e(g['intro'])+'</p>'+body+'</div></section>'
+    panorama='<details class="wl-factory-more"><summary>افتح المشاهد البانورامية للمصنع وصالات العرض</summary><div class="wl-factory-grid">'+''.join(photo(p) for p in data['photos'])+'</div></details>'
+    main+=section('مشاهد بانورامية من الموقع','<p class="wl-section-intro">زوايا أوسع للمبنى والورش والمستودع وصالات العينات.</p>'+panorama,'wl-soft')
+    main+=section('تجهيز المكونات داخل المصنع','<div class="wl-factory-grid wl-photo-grid">'+''.join(photo(p) for p in data.get('additional_factory_photos',[]))+'</div>')
+    main+=section('جهز طلبك مع فريق WangLi','<p>للموزعين: أرسل فئات المنتجات والموديلات والكميات وبلد الوصول. ولشركات توريد المشاريع: أرفق جدول الكميات والمواصفات والوثائق المطلوبة للمراجعة.</p>'+links(),'wl-soft')
+    return main
+
 def render_company(builder):
     data=json.loads((builder.ROOT/'content/company.json').read_text(encoding='utf-8'))
     photos=data['photos'];certs=data['certificates']
@@ -33,6 +53,7 @@ def render_company(builder):
         main+=section('من تجهيز المكونات إلى تخزين الكراتين','<p class="wl-section-intro">صور إضافية للمقاعد قبل التجميع والهياكل المعدنية والكراتين داخل المصنع.</p><div class="wl-factory-grid wl-photo-grid">'+''.join(photo(p) for p in data['additional_factory_photos'])+'</div>','wl-soft')
     main+=section('الاستقبال وصالات العرض','<p class="wl-section-intro">استعرض نماذج من الطاولات والكراسي والأسرّة والأثاث التعليمي في صالات عرض WangLi.</p><div class="wl-factory-grid">'+''.join(photo(p) for p in photos[6:])+'</div>','wl-soft')
     main+=section('جهز طلبك مع فريق WangLi','<p>للموزعين: أرسل فئات المنتجات والموديلات والكميات وبلد الوصول. ولشركات توريد المشاريع: أرفق جدول الكميات والمواصفات والوثائق المطلوبة للمراجعة.</p>'+links())
+    if data.get('factory_visit_photos'):main=factory_visit(data)
     builder.page('/factory/','مصنع الأثاث المدرسي WangLi | صور الإنتاج وصالات العرض','صور حقيقية من مصنع WangLi تشمل ورش تشغيل المعادن والمستودع وصالات العرض، للموزعين وشركات توريد الأثاث المدرسي في الأسواق العربية.',main)
     intro='<section class="wl-company-hero"><div class="wl-container"><p class="wl-eyebrow">WANGLI · ملف الشركة</p><h1>الشهادات والوثائق</h1><p class="wl-lead">استعرض وثائق نظم الإدارة وسلسلة الحيازة ووثائق المنتجات، مع أرقامها والفترات المدونة ونطاق كل وثيقة.</p><p>اسم الجهة الوارد في الوثائق: <bdi>Zhejiang Wangli Teaching Equipment Co., Ltd</bdi>.</p><p class="wl-section-intro">حدد بلد المشروع والموديل والبند المطلوب، ليطابق الفريق الوثيقة المناسبة مع متطلبات ملف التوريد.</p>'+links()+'</div></section>'
     main=intro+section('وثائق نظم الإدارة','<div class="wl-doc-grid">'+''.join(document(c) for c in certs if c['kind']=='management')+'</div>')
@@ -49,7 +70,7 @@ def render_company(builder):
             main+='<section id="'+group+'" class="wl-section'+(' wl-soft' if group=='loading' else '')+'"><div class="wl-container"><h2>'+title+'</h2><p class="wl-section-intro">'+description+'</p><div class="wl-factory-grid wl-photo-grid">'+''.join(photo(p) for p in shipping if p['group']==group)+'</div></div></section>'
         main+=section('ما المعلومات اللازمة لمراجعة التعبئة والتحميل؟','<p>حدد الموديل والكمية ومقاسات المكونات والوجهة ومتطلبات الاستلام. اطلب توضيح عدد القطع في الكرتون وأبعاده ووزنه وطريقة حماية الأجزاء وترتيب المنصات ضمن عرض السعر الخاص بطلبك.</p><p>إذا كنت تجهز ملف مناقصة، أرفق متطلبات ترقيم الكراتين والملصقات والتسليم للمراجعة قبل اعتماد الطلب.</p>'+links(),'wl-soft')
         builder.page('/packing-and-shipping/','تعبئة الأثاث المدرسي وتحميل الحاويات | صور WangLi','صور تعبئة الأثاث المدرسي وترتيب المنصات وتحميل الحاويات لدى WangLi، مع صور من ملف العراق ومعلومات تجهيز الطلب للموزعين وشركات توريد المشاريع.',main)
-    routes=[('factory','factory-gate.jpg','مصنع WangLi'),('certificates','certificate-iso9001-preview.jpg','الشهادات والوثائق')]
+    routes=[('factory',data.get('factory_visit_hero','factory-gate.jpg'),'مصنع WangLi'),('certificates','certificate-iso9001-preview.jpg','الشهادات والوثائق')]
     if shipping:routes.append(('packing-and-shipping','packing-pallet-staging-preview.jpg','التعبئة والتحميل'))
     for route,image,title in routes:
         file=builder.ROOT/route/'index.html';doc=BeautifulSoup(file.read_text(encoding='utf-8'),'html.parser')

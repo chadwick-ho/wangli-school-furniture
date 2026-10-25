@@ -45,8 +45,11 @@
       "title": "المستودع",
       "caption": "لقطة داخلية من مستودع المصنع.",
       "category": "التخزين",
-      "width": 1800,
-      "height": 900
+      "width": 2400,
+      "height": 1200,
+      "preview": "factory-warehouse-preview.jpg",
+      "preview_width": 960,
+      "preview_height": 480
     },
     {
       "file": "factory-lobby.jpg",
@@ -61,8 +64,11 @@
       "title": "مدخل صالة العرض",
       "caption": "المدخل المؤدي إلى منطقة عرض العينات.",
       "category": "العينات",
-      "width": 1800,
-      "height": 900
+      "width": 2400,
+      "height": 1200,
+      "preview": "factory-showroom-entrance-preview.jpg",
+      "preview_width": 960,
+      "preview_height": 480
     },
     {
       "file": "factory-showroom-01.jpg",
@@ -549,6 +555,386 @@
       "height": 1800,
       "preview_width": 675,
       "preview_height": 900
+    }
+  ],
+  "factory_visit_photos": [
+    {
+      "file": "factory-visit-exterior-01.jpg",
+      "preview": "factory-visit-exterior-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "واجهة المصنع ومنطقة المدخل",
+      "caption": "واجهة مبنى WangLi والبوابة من خارج الموقع.",
+      "group": "exterior"
+    },
+    {
+      "file": "factory-visit-exterior-02.jpg",
+      "preview": "factory-visit-exterior-02-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "مدخل مصنع WangLi",
+      "caption": "واجهة المصنع وبوابة الدخول في صورة من الموقع.",
+      "group": "exterior"
+    },
+    {
+      "file": "factory-visit-exterior-03.jpg",
+      "preview": "factory-visit-exterior-03-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "المبنى والبوابة",
+      "caption": "منظر آخر لواجهة المصنع والمدخل.",
+      "group": "exterior"
+    },
+    {
+      "file": "factory-visit-cutting-01.jpg",
+      "preview": "factory-visit-cutting-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "منطقة القطع وتجهيز المعادن",
+      "caption": "معدات وهياكل معدنية داخل منطقة تجهيز المكونات.",
+      "group": "production"
+    },
+    {
+      "file": "factory-visit-welding-01.jpg",
+      "preview": "factory-visit-welding-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "ورشة اللحام وتجهيز الهياكل",
+      "caption": "معدات العمل وهياكل معدنية مرتبة داخل الورشة.",
+      "group": "production"
+    },
+    {
+      "file": "factory-visit-welding-02.jpg",
+      "preview": "factory-visit-welding-02-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "منظر آخر لورشة الهياكل",
+      "caption": "منظر إضافي لمعدات العمل والمكونات المعدنية في الورشة.",
+      "group": "production"
+    },
+    {
+      "file": "factory-visit-tube-bending-01.jpg",
+      "preview": "factory-visit-tube-bending-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "منطقة ثني الأنابيب",
+      "caption": "معدات تشغيل الأنابيب وهياكل معدنية داخل المصنع.",
+      "group": "production"
+    },
+    {
+      "file": "factory-visit-tube-bending-02.jpg",
+      "preview": "factory-visit-tube-bending-02-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "معدات تجهيز الأنابيب",
+      "caption": "منظر آخر لمعدات تجهيز الأنابيب المعدنية.",
+      "group": "production"
+    },
+    {
+      "file": "factory-visit-drilling-01.jpg",
+      "preview": "factory-visit-drilling-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "منطقة الثقب وتشغيل المعادن",
+      "caption": "معدات تشغيل المعادن ومكونات مرتبة بجوارها.",
+      "group": "production"
+    },
+    {
+      "file": "factory-visit-drilling-02.jpg",
+      "preview": "factory-visit-drilling-02-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "معدات الثقب في الورشة",
+      "caption": "منظر إضافي للمعدات ومنطقة العمل داخل الورشة.",
+      "group": "production"
+    },
+    {
+      "file": "factory-visit-warehouse-01.jpg",
+      "preview": "factory-visit-warehouse-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "المكونات والكراتين في المستودع",
+      "caption": "كراتين ومكونات أثاث مرتبة داخل مستودع المصنع.",
+      "group": "warehouse"
+    },
+    {
+      "file": "factory-visit-warehouse-02.jpg",
+      "preview": "factory-visit-warehouse-02-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "منطقة تخزين المكونات",
+      "caption": "منظر آخر لترتيب المكونات والكراتين داخل المستودع.",
+      "group": "warehouse"
+    },
+    {
+      "file": "factory-visit-warehouse-03.jpg",
+      "preview": "factory-visit-warehouse-03-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "ترتيب الكراتين والهياكل",
+      "caption": "كراتين وهياكل معدنية في منطقة التخزين.",
+      "group": "warehouse"
+    },
+    {
+      "file": "factory-visit-warehouse-04.jpg",
+      "preview": "factory-visit-warehouse-04-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "مساحة التخزين داخل المصنع",
+      "caption": "منظر إضافي للكراتين والمكونات في المستودع.",
+      "group": "warehouse"
+    },
+    {
+      "file": "factory-visit-lobby-01.jpg",
+      "preview": "factory-visit-lobby-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "بهو الاستقبال",
+      "caption": "بهو داخل مبنى WangLi مع لوحة تعريف بالشركة.",
+      "group": "reception"
+    },
+    {
+      "file": "factory-visit-lobby-02.jpg",
+      "preview": "factory-visit-lobby-02-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "منطقة الاستقبال الداخلية",
+      "caption": "منظر آخر للبهو ولوحة التعريف بالشركة.",
+      "group": "reception"
+    },
+    {
+      "file": "factory-visit-showroom-01.jpg",
+      "preview": "factory-visit-showroom-01-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "مدخل صالة العينات",
+      "caption": "مدخل صالة عرض الأثاث التعليمي ومنطقة الاستقبال.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-02.jpg",
+      "preview": "factory-visit-showroom-02-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "الاستقبال وصالة العينات",
+      "caption": "منظر جانبي لمنطقة الاستقبال وصالة عرض المنتجات.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-03.jpg",
+      "preview": "factory-visit-showroom-03-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "أثاث رياض الأطفال وصالة العرض",
+      "caption": "طاولات وكراسٍ ملونة ونماذج أثاث داخل صالة العينات.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-04.jpg",
+      "preview": "factory-visit-showroom-04-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "الكراسي وطاولات الأنشطة",
+      "caption": "نماذج كراسٍ وطاولات أنشطة معروضة داخل صالة WangLi.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-05.jpg",
+      "preview": "factory-visit-showroom-05-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "الطاولات وكراسي المحاضرات",
+      "caption": "نماذج طاولات مدرسية وكراسي محاضرات في صالة العرض.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-06.jpg",
+      "preview": "factory-visit-showroom-06-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "تنوع النماذج في صالة العرض",
+      "caption": "طاولات وكراسي ونماذج أثاث تعليمي معروضة للمقارنة.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-07.jpg",
+      "preview": "factory-visit-showroom-07-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "صالة عرض الطاولات والكراسي",
+      "caption": "نماذج متعددة من الطاولات والكراسي في صالة WangLi.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-08.jpg",
+      "preview": "factory-visit-showroom-08-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "نماذج الطاولات والسبورات",
+      "caption": "طاولات وكراسٍ وسبورات معروضة داخل الصالة.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-09.jpg",
+      "preview": "factory-visit-showroom-09-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "الخزائن ووحدات التخزين",
+      "caption": "نماذج خزائن وأرفف ووحدات تخزين داخل صالة العينات.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-10.jpg",
+      "preview": "factory-visit-showroom-10-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "السبورات وألواح العرض",
+      "caption": "نماذج سبورات وألواح عرض معروضة داخل الصالة.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-11.jpg",
+      "preview": "factory-visit-showroom-11-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "منطقة استقبال الزوار وصالة العينات",
+      "caption": "منظر أوسع لمنطقة الاستقبال ونماذج الأثاث داخل الصالة.",
+      "group": "showroom"
+    },
+    {
+      "file": "factory-visit-showroom-12.jpg",
+      "preview": "factory-visit-showroom-12-preview.jpg",
+      "width": 2400,
+      "height": 1350,
+      "preview_width": 960,
+      "preview_height": 540,
+      "title": "مقارنة نماذج الطاولات والكراسي",
+      "caption": "نماذج مختلفة من الطاولات والكراسي مرتبة في صالة العرض.",
+      "group": "showroom"
+    }
+  ],
+  "factory_visit_hero": "factory-visit-exterior-02.jpg",
+  "factory_visit_groups": [
+    {
+      "id": "exterior",
+      "title": "المبنى ومدخل المصنع",
+      "intro": "صور لواجهة المصنع وبوابة الدخول من خارج الموقع.",
+      "order": [
+        0,
+        2
+      ],
+      "visible": 2
+    },
+    {
+      "id": "production",
+      "title": "ورش تشغيل المعادن",
+      "intro": "صور لمناطق القطع واللحام وثني الأنابيب والثقب وتجهيز المكونات.",
+      "order": [
+        3,
+        4,
+        6,
+        8,
+        5,
+        7,
+        9
+      ],
+      "visible": 3
+    },
+    {
+      "id": "warehouse",
+      "title": "المستودع وتجهيز المكونات",
+      "intro": "كراتين وهياكل ومكونات أثاث داخل منطقة التخزين.",
+      "order": [
+        10,
+        12,
+        11,
+        13
+      ],
+      "visible": 2
+    },
+    {
+      "id": "reception",
+      "title": "الاستقبال داخل المصنع",
+      "intro": "البهو الداخلي ولوحة التعريف بالشركة.",
+      "order": [
+        14,
+        15
+      ],
+      "visible": 2
+    },
+    {
+      "id": "showroom",
+      "title": "صالة عرض الأثاث التعليمي",
+      "intro": "شاهد نماذج الطاولات والكراسي وأثاث رياض الأطفال والخزائن والسبورات للمقارنة قبل تحديد الموديلات.",
+      "order": [
+        22,
+        19,
+        24,
+        16,
+        17,
+        18,
+        20,
+        21,
+        23,
+        25,
+        26,
+        27
+      ],
+      "visible": 3
     }
   ]
 }
