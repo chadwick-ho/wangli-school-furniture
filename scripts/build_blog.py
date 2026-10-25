@@ -154,6 +154,7 @@ def update_site():
             if existing:existing.decompose()
             section=BeautifulSoup('<section id="wangli-latest-posts" class="wl-section wl-soft"><div class="wl-container"><p class="wl-eyebrow">من المدونة</p><h2>مقالات تساعدك قبل طلب التوريد</h2><div class="wl-blog-grid">'+''.join(card(p) for p in POSTS[:3])+'</div><p class="wl-blog-tools"><a href="/blog/">استعرض جميع المقالات ←</a></p></div></section>','html.parser')
             doc.main.append(section)
+        if path=='/school-furniture-catalog/':home.integrate_catalog(doc,__import__(__name__))
         company.integrate(doc,path)
         file.write_text(str(doc),encoding='utf-8')
     urlset=Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
@@ -192,7 +193,7 @@ def artifact():
     assert dest.parent==ROOT.resolve() and dest.name=='_site'
     if dest.exists():shutil.rmtree(dest)
     dest.mkdir()
-    allowed={'.html','.css','.jpg','.png','.pdf','.xlsx','.csv','.xml','.txt','.ico','.webp'}
+    allowed={'.html','.css','.js','.jpg','.png','.pdf','.xlsx','.csv','.xml','.txt','.ico','.webp'}
     for file in ROOT.rglob('*'):
         if not file.is_file() or any(p in {'.git','.github','_site','scripts','templates','content','__pycache__'} for p in file.relative_to(ROOT).parts):continue
         if file.suffix.lower() not in allowed and file.name not in ['CNAME','.nojekyll']:continue

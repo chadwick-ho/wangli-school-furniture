@@ -1,0 +1,9 @@
+{
+  "title": "ابدأ من قرار الشراء الذي تريد حسمه",
+  "description": "الكتالوج مرجع للخيارات؛ استخدمه لتجهيز قائمة واضحة، ثم أكّد المواصفات وشروط الطلب عبر قنوات WangLi.",
+  "paths": [
+    {"id":"catalog-for-distributors","number":"01","title":"أختار تشكيلة للتوزيع","description":"حدّد الفئة ورقم الصفحة وصورة التكوين والكمية لكل خيار. افصل الطاولة والكرسي والطقم عند مقارنة عروض الموردين.","primary_label":"تصفّح الطاولات والكراسي","primary_url":"/products/classroom/","secondary_label":"استخدم دليل مقارنة العروض","secondary_url":"/school-furniture-wholesale-guide/"},
+    {"id":"catalog-for-projects","number":"02","title":"أراجع بنود مشروع","description":"اربط رقم بند BOQ بالموديل المقترح. أضف الأبعاد والخامات والملحقات ومتطلبات الاختبار، وميّز البنود التي تنتظر توضيحًا.","primary_label":"راجع المواصفات وأدلة الاختبار","primary_url":"/school-desk-chair-specifications/","secondary_label":"حدّد نطاق التوريد والمسؤوليات","secondary_url":"/school-furniture-tender-checklist/"},
+    {"id":"catalog-for-evidence","number":"03","title":"أتحقق من المورد والوثائق","description":"افصل صور العرض عن صور الإنتاج، وطابق نطاق الوثيقة مع المطلوب. أكّد بيانات التعبئة للموديل والطلب المحددين.","primary_label":"شاهد المصنع والإنتاج","primary_url":"/factory/","secondary_label":"راجع التعبئة والتحميل","secondary_url":"/packing-and-shipping/"}
+  ]
+}
