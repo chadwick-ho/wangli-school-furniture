@@ -1,5 +1,6 @@
 """Render supplied factory photographs and clearly scoped company documents."""
 import json
+from pathlib import Path
 from html import escape as e
 from bs4 import BeautifulSoup
 
@@ -92,5 +93,7 @@ def integrate(doc,path):
     if path in ['/','/about-wangli/','/school-furniture-tender-supply/','/school-furniture-wholesale/']:
         old=doc.select_one('#wangli-company-preview')
         if old:old.decompose()
-        html='<section id="wangli-company-preview" class="wl-section wl-company-preview"><div class="wl-container"><p class="wl-eyebrow">تعرف على WangLi</p><h2>من المصنع إلى ملف التوريد</h2><p>جولة مصورة في المصنع وصالات العرض، ووثائق الشركة لمراجعة نطاقها ضمن متطلبات الشراء والتوريد.</p><div class="wl-company-strip">'+''.join('<a href="/factory/"><img src="/assets/'+f+'" alt="'+alt+'" width="1800" height="900" loading="lazy" decoding="async"></a>' for f,alt in [('factory-gate.jpg','مدخل مصنع WangLi'),('factory-welding.jpg','ورشة اللحام في مصنع WangLi'),('factory-showroom-01.jpg','نماذج الأثاث المدرسي في صالة عرض WangLi')])+'</div>'+links()+'</div></section>'
+        preview=json.loads((Path(__file__).resolve().parents[1]/'content/company.json').read_text(encoding='utf-8'))['factory_preview']
+        cards=''.join('<a href="'+p['url']+'"><img src="/assets/'+p['image']+'" alt="'+e(p['alt'],quote=True)+'" width="960" height="540" loading="lazy" decoding="async"><span>'+e(p['title'])+' ←</span></a>' for p in preview['cards'])
+        html='<section id="wangli-company-preview" class="wl-section wl-company-preview"><div class="wl-container"><p class="wl-eyebrow">تعرف على WangLi</p><h2>'+e(preview['title'])+'</h2><p>'+e(preview['description'])+'</p><div class="wl-company-strip wl-company-visit-strip">'+cards+'</div>'+links()+'</div></section>'
         doc.main.append(BeautifulSoup(html,'html.parser'))

@@ -1,4 +1,13 @@
 {
+  "factory_preview": {
+    "title": "من المصنع إلى ملف التوريد",
+    "description": "شاهد صور المدخل وورش الإنتاج وصالة العينات. افتح القسم الذي تريد مراجعته، ثم حدّد الموديلات والوثائق المطلوبة لطلبك.",
+    "cards": [
+      {"title": "المبنى ومدخل المصنع", "image": "factory-visit-exterior-02-preview.jpg", "alt": "واجهة مصنع WangLi وبوابة الدخول", "url": "/factory/#factory-visit-exterior"},
+      {"title": "ورش الإنتاج وتجهيز الهياكل", "image": "factory-visit-welding-01-preview.jpg", "alt": "معدات العمل والهياكل المعدنية داخل ورشة WangLi", "url": "/factory/#factory-visit-production"},
+      {"title": "نماذج الأثاث في صالة العرض", "image": "factory-visit-showroom-04-preview.jpg", "alt": "كراسٍ وطاولات أنشطة ونماذج أثاث معروضة في صالة WangLi", "url": "/factory/#factory-visit-showroom"}
+    ]
+  },
   "photos": [
     {
       "file": "factory-gate.jpg",
