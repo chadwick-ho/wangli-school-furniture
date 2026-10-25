@@ -31,6 +31,10 @@ def integrate(doc,builder):
     data=json.loads((builder.ROOT/'content/home.json').read_text(encoding='utf-8'))
     old=doc.select_one('#wangli-home-evidence') or doc.select_one('main .wl-hero');assert old
     old.replace_with(BeautifulSoup(hero(data),'html.parser'))
+    old_certificates=doc.select_one('#wangli-home-certificates')
+    if old_certificates:old_certificates.decompose()
+    certificates=json.loads((builder.ROOT/'content/company.json').read_text(encoding='utf-8'))['certificates']
+    doc.select_one('#wangli-home-evidence').insert_after(BeautifulSoup(certificate_wall(data['certificates'],certificates),'html.parser'))
     doc.title.string=data['seo_title']
     for key,val in [('description',data['seo_description']),('og:title',data['seo_title']),('og:description',data['seo_description']),('twitter:title',data['seo_title']),('twitter:description',data['seo_description']),('og:image',builder.DOMAIN+'/assets/'+data['slides'][0]['image']),('twitter:image',builder.DOMAIN+'/assets/'+data['slides'][0]['image'])]:
         tag=doc.find('meta',attrs={'property' if key.startswith('og:') else 'name':key})
@@ -46,3 +50,17 @@ def integrate(doc,builder):
             elif isinstance(node,list):
                 for val in node:update(val)
         update(schema);tag.string=json.dumps(schema,ensure_ascii=False).replace('</','<\\/')
+
+def certificate_wall(copy,certificates):
+    """Reuse the certificate page's document records and unaltered originals."""
+    cards=[];archives=[]
+    for c in certificates:
+        f=c['files'][0]
+        title=copy['labels'][c['slug']]
+        image=f'''<a class="wl-cert-image" href="/assets/{f['file']}" target="_blank" rel="noopener" aria-label="{e(title+' — افتح الصورة الأصلية',quote=True)}"><img src="/assets/{f['preview']}" alt="{e(c['title'],quote=True)}" width="750" height="1061" loading="lazy" decoding="async"><span>{e(copy['open_original'])} ↗</span></a>'''
+        if c['kind']=='archive':
+            archives.append(f'''<article class="wl-cert-archive">{image}<div><p class="wl-cert-archive-label">{e(copy['archive_label'])}</p><h3><a href="/certificates/#{c['slug']}">{e(title)}</a></h3><p>{e(copy['archive_note'])} <time datetime="{c['expires']}" dir="ltr">{c['expires']}</time></p></div><a class="wl-cert-archive-link" href="/certificates/#{c['slug']}">{e(copy['details'])} ←</a></article>''')
+            continue
+        annexes=''.join(f'''<a href="/assets/{a['file']}" target="_blank" rel="noopener">ملحق {i} ↗</a>''' for i,a in enumerate(c['files'][1:],1))
+        cards.append(f'''<article class="wl-cert-card">{image}<div class="wl-cert-copy"><p class="wl-cert-type">{e(copy['types'][c['kind']])}</p><h3><a href="/certificates/#{c['slug']}">{e(title)}</a></h3><p class="wl-cert-expiry">{e(copy['document_until'])} <time datetime="{c['expires']}" dir="ltr">{c['expires']}</time></p><div class="wl-cert-links"><a href="/certificates/#{c['slug']}">{e(copy['details'])} ←</a>{annexes}</div></div></article>''')
+    return f'''<section id="wangli-home-certificates" class="wl-certificates" aria-labelledby="wl-certificates-title"><div class="wl-container"><header class="wl-cert-header"><div><p class="wl-eyebrow">{e(copy['eyebrow'])}</p><h2 id="wl-certificates-title">{e(copy['title'])}</h2><p>{e(copy['intro'])}</p></div><a class="wl-cert-all" href="/certificates/">{e(copy['all_label'])} ←<span>{e(copy['count_label'])}</span></a></header><div class="wl-cert-grid">{''.join(cards)}</div><p class="wl-cert-scope">{e(copy['scope_note'])}</p>{''.join(archives)}</div></section>'''
