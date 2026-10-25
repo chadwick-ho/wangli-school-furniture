@@ -43,6 +43,9 @@ def load_posts():
         post['image']='/assets/'+Path(post['image']).name
         assert (ROOT/post['image'].lstrip('/')).is_file(),'Missing article image'
         body=BeautifulSoup(markdown.markdown(raw[match.end():],extensions=['tables','sane_lists']),'html.parser')
+        for table in list(body.find_all('table')):
+            wrapper=body.new_tag('figure',attrs={'class':'wp-block-table wl-blog-table-scroll','tabindex':'0','role':'region','aria-label':'جدول للمقارنة — يمكن تمريره أفقيًا'})
+            table.wrap(wrapper)
         for h1 in list(body.find_all('h1')):h1.decompose()
         assert len(body.find_all('h2'))>=2,'An article needs meaningful sections'
         assert not body.find(['script','iframe','form','style']),'Unsupported active article content'
@@ -119,6 +122,9 @@ def render_blog():
             parsed=BeautifulSoup(main,'html.parser');cover=parsed.select_one('.wl-blog-cover')
             figure=parsed.new_tag('figure',attrs={'class':'wl-blog-cover-figure'});cover.wrap(figure)
             caption=parsed.new_tag('figcaption');caption.string=post['image_caption'];figure.append(caption);main=str(parsed)
+        if post.get('modified'):
+            parsed=BeautifulSoup(main,'html.parser');byline=parsed.select_one('.wl-blog-byline')
+            byline.append(' · آخر تحديث: ');date=parsed.new_tag('time',datetime=post['modified']);date.string=post['modified'][:10];byline.append(date);main=str(parsed)
         page(post['path'],post.get('seo_title',post['title']+' | WangLi'),post['description'],main,post=post)
 
 def update_site():
