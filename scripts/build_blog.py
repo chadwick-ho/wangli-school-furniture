@@ -72,7 +72,7 @@ def category_nav(active='all'):
 
 def card(post):
     cat=CATEGORIES[post['category']]['name']
-    image_class='wl-blog-image'+(' wl-blog-image-photo' if post.get('image_kind')=='photo' else '')
+    image_class='wl-blog-image'+(' wl-blog-image-photo' if post.get('image_kind')=='photo' else ' wl-blog-image-diagram' if post.get('image_kind')=='diagram' else '')
     return '<article class="wl-blog-card"><a class="'+image_class+'" href="'+post['path']+'"><img src="'+post['image']+'" alt="'+escape(post['image_alt'],quote=True)+'" width="800" height="500" loading="lazy" decoding="async"></a><div class="wl-blog-card-body"><p class="wl-eyebrow">'+escape(cat)+' · <time datetime="'+post['published']+'">'+post['published'][:10]+'</time></p><h2><a href="'+post['path']+'">'+escape(post['title'])+'</a></h2><p>'+escape(post['description'])+'</p><a class="wl-blog-read" href="'+post['path']+'">اقرأ المقال <span aria-hidden="true">←</span></a></div></article>'
 
 def page(path,title,description,main,post=None,category=None):
@@ -120,7 +120,10 @@ def render_blog():
         main='<nav class="wl-breadcrumb wl-container" aria-label="مسار التنقل"><a href="/">الرئيسية</a> / <a href="/blog/">المدونة</a> / <a href="/blog/'+post['category']+'/">'+CATEGORIES[post['category']]['name']+'</a></nav><article class="wl-section wl-blog-article"><div class="wl-container wl-reading"><header><p class="wl-eyebrow">'+CATEGORIES[post['category']]['name']+'</p><h1>'+escape(post['title'])+'</h1><p class="wl-blog-byline">WangLi · <time datetime="'+post['published']+'">'+post['published'][:10]+'</time></p></header><img class="wl-blog-cover" src="'+post['image']+'" alt="'+escape(post['image_alt'],quote=True)+'" width="800" height="500" loading="eager" decoding="async" fetchpriority="high"><div class="wl-blog-prose">'+post['body']+'</div><aside class="wl-blog-related"><h2>مقالات ذات صلة</h2><ul>'+''.join('<li><a href="'+p['path']+'">'+escape(p['title'])+'</a></li>' for p in POSTS if p['slug']!=post['slug'])+'</ul><a href="/blog/">جميع مقالات المدونة</a></aside></div></article>'
         if post.get('image_caption'):
             parsed=BeautifulSoup(main,'html.parser');cover=parsed.select_one('.wl-blog-cover')
-            figure=parsed.new_tag('figure',attrs={'class':'wl-blog-cover-figure'});cover.wrap(figure)
+            figure=parsed.new_tag('figure',attrs={'class':'wl-blog-cover-figure'+(' wl-blog-cover-diagram' if post.get('image_kind')=='diagram' else '')});cover.wrap(figure)
+            if post.get('image_kind')=='diagram':
+                cover['width']=str(post.get('image_width',800));cover['height']=str(post.get('image_height',500))
+                link=parsed.new_tag('a',href=post['image'],attrs={'aria-label':'فتح المخطط بالحجم الكامل'});cover.wrap(link)
             caption=parsed.new_tag('figcaption');caption.string=post['image_caption'];figure.append(caption);main=str(parsed)
         if post.get('modified'):
             parsed=BeautifulSoup(main,'html.parser');byline=parsed.select_one('.wl-blog-byline')
