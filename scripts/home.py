@@ -1,5 +1,6 @@
 """Buyer-question carousel and catalog paths from editable content files."""
 import json
+from copy import deepcopy
 from html import escape as e
 from bs4 import BeautifulSoup
 
@@ -37,6 +38,21 @@ def integrate(doc,builder):
     if old_certificates:old_certificates.decompose()
     certificates=json.loads((builder.ROOT/'content/company.json').read_text(encoding='utf-8'))['certificates']
     doc.select_one('#wangli-home-evidence').insert_after(BeautifulSoup(certificate_wall(data['certificates'],certificates),'html.parser'))
+    # Reuse actual products from the maintained product page; rebuild idempotently.
+    old_products=doc.select_one('#wangli-home-selected-products')
+    if old_products: old_products.decompose()
+    product_doc=BeautifulSoup((builder.ROOT/'products/index.html').read_text(encoding='utf-8'),'html.parser')
+    product_grid=product_doc.select_one('main .wl-products')
+    category_grid=doc.select_one('main .wl-catalog-grid')
+    assert product_grid and category_grid
+    grid=deepcopy(product_grid)
+    for image in grid.select('img[src]'):
+        image['src']=image['src'].replace('../assets/','/assets/')
+    for link in grid.select('a[href]'):
+        link['href']='/products/'+link['href']
+    section=BeautifulSoup('<section id="wangli-home-selected-products" class="wl-section"><div class="wl-container"><h2>منتجات مختارة من مجموعة WangLi</h2></div></section>','html.parser')
+    section.select_one('.wl-container').append(grid)
+    category_grid.find_parent(class_='wl-section').insert_after(section)
     doc.title.string=data['seo_title']
     for key,val in [('description',data['seo_description']),('og:title',data['seo_title']),('og:description',data['seo_description']),('twitter:title',data['seo_title']),('twitter:description',data['seo_description']),('og:image',builder.DOMAIN+'/assets/'+data['slides'][0]['image']),('twitter:image',builder.DOMAIN+'/assets/'+data['slides'][0]['image'])]:
         tag=doc.find('meta',attrs={'property' if key.startswith('og:') else 'name':key})
