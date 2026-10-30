@@ -1,62 +1,449 @@
 {
-  "version": 23,
+  "version": 24,
   "hero": {
-    "eyebrow": "من مصنع WangLi في الصين",
-    "title": "أثاث مدرسي للموزعين وشركات توريد المشاريع",
-    "description": "طاولات وكراسٍ وأثاث للمساحات التعليمية. اختر التكوين المناسب، وحدّد متطلباتك، وابدأ طلب التوريد من المصنع.",
-    "primary_label": "اطلب عرض سعر",
-    "primary_url": "/request-a-quote/",
-    "secondary_label": "استكشف المنتجات",
-    "secondary_url": "#home-products",
+    "eyebrow": "للموزعين وشركات توريد المشاريع · من مصنع WangLi في الصين",
+    "title": "من اختيار الأثاث المدرسي إلى طلب توريد واضح",
+    "description": "ابدأ بالموديل ومواصفاته، وراجع الوثائق ونطاق التوريد، ثم أرسل قائمة يمكن مناقشتها بندًا بندًا.",
+    "primary_label": "جهّز قائمة طلبك",
+    "primary_url": "#home-request",
+    "secondary_label": "لماذا WangLi؟",
+    "secondary_url": "#home-why",
     "slides": [
-      {"id":"showroom","label":"صالة العرض","image":"home-v23-factory-visit-showroom-07.webp","preview":"home-v23-factory-visit-showroom-07-preview.webp","width":2400,"height":1350,"alt":"طاولات وكراسٍ مدرسية وكراسي محاضرات في صالة عرض WangLi","caption":"صالة عرض WangLi · نماذج للاختيار والمقارنة"},
-      {"id":"production","label":"داخل المصنع","image":"home-v23-factory-visit-welding-01.webp","preview":"home-v23-factory-visit-welding-01-preview.webp","width":2400,"height":1350,"alt":"معدات اللحام وتجهيز الهياكل في ورشة مصنع WangLi","caption":"من مصنع WangLi في الصين · ورشة تجهيز الهياكل"},
-      {"id":"factory","label":"تعرف على WangLi","image":"home-v23-factory-visit-exterior-02.webp","preview":"home-v23-factory-visit-exterior-02-preview.webp","width":2400,"height":1350,"alt":"واجهة مصنع WangLi ومدخل الموقع في الصين","caption":"مصنع WangLi في الصين · شاهد الجولة المصورة"}
+      {
+        "id": "showroom",
+        "label": "صالة العرض",
+        "image": "home-v23-factory-visit-showroom-07.webp",
+        "preview": "home-v23-factory-visit-showroom-07-preview.webp",
+        "width": 2400,
+        "height": 1350,
+        "alt": "طاولات وكراسٍ مدرسية وكراسي محاضرات في صالة عرض WangLi",
+        "caption": "صالة عرض WangLi · نماذج للاختيار والمقارنة"
+      },
+      {
+        "id": "production",
+        "label": "داخل المصنع",
+        "image": "home-v23-factory-visit-welding-01.webp",
+        "preview": "home-v23-factory-visit-welding-01-preview.webp",
+        "width": 2400,
+        "height": 1350,
+        "alt": "معدات اللحام وتجهيز الهياكل في ورشة مصنع WangLi",
+        "caption": "من مصنع WangLi في الصين · ورشة تجهيز الهياكل"
+      },
+      {
+        "id": "factory",
+        "label": "تعرف على WangLi",
+        "image": "home-v23-factory-visit-exterior-02.webp",
+        "preview": "home-v23-factory-visit-exterior-02-preview.webp",
+        "width": 2400,
+        "height": 1350,
+        "alt": "واجهة مصنع WangLi ومدخل الموقع في الصين",
+        "caption": "مصنع WangLi في الصين · شاهد الجولة المصورة"
+      }
     ]
   },
   "proof": [
-    {"number":"01","title":"شاهد المصنع","description":"صور الموقع وورش الإنتاج","url":"/factory/","image":"home-v23-factory-visit-exterior-02-preview.webp","alt":"مبنى WangLi ومدخل المصنع"},
-    {"number":"02","title":"راجع الوثائق","description":"الأصول والنطاق والتواريخ","url":"/certificates/","image":"certificate-iso9001-preview.jpg","alt":"وثيقة نظام إدارة الجودة الخاصة بالشركة"},
-    {"number":"03","title":"تعرّف على التعبئة","description":"صور التجهيز والتحميل","url":"/packing-and-shipping/","image":"home-v23-packing-pallet-staging-preview.webp","alt":"هياكل أثاث مغلفة على منصات في المصنع"}
+    {
+      "number": "01",
+      "title": "شاهد المصنع",
+      "description": "صور الموقع وورش الإنتاج",
+      "url": "/factory/",
+      "image": "home-v23-factory-visit-exterior-02-preview.webp",
+      "alt": "مبنى WangLi ومدخل المصنع"
+    },
+    {
+      "number": "02",
+      "title": "راجع الوثائق",
+      "description": "الأصول والنطاق والتواريخ",
+      "url": "/certificates/",
+      "image": "certificate-iso9001-preview.jpg",
+      "alt": "وثيقة نظام إدارة الجودة الخاصة بالشركة"
+    },
+    {
+      "number": "03",
+      "title": "تعرّف على التعبئة",
+      "description": "صور التجهيز والتحميل",
+      "url": "/packing-and-shipping/",
+      "image": "home-v23-packing-pallet-staging-preview.webp",
+      "alt": "هياكل أثاث مغلفة على منصات في المصنع"
+    }
   ],
   "products": {
-    "eyebrow":"مجموعة WangLi",
-    "title":"أثاث لكل مساحة تعليمية",
-    "description":"ابدأ من الفئة، ثم راجع الموديلات والمقاسات والخامات المتاحة لطلبك.",
-    "items":[
-      {"title":"الفصول الدراسية","description":"طاولات وكراسٍ مدرسية","image":"home-v23-0bd9547d1c-catalog-classroom-detail.webp","url":"/products/classroom/","alt":"نماذج طاولات وكراسٍ مدرسية من كتالوج WangLi"},
-      {"title":"المحاضرات والتدريب","description":"كراسٍ مع ألواح كتابة","image":"home-v23-5140d5b569-catalog-lecture-detail.webp","url":"/products/lecture/","alt":"نماذج كراسي محاضرات بألواح كتابة من كتالوج WangLi"},
-      {"title":"رياض الأطفال","description":"أثاث للأنشطة والتعلم","image":"home-v23-3834e7a66c-catalog-kindergarten-detail.webp","url":"/products/kindergarten/","alt":"مجموعة أثاث رياض الأطفال من كتالوج WangLi"},
-      {"title":"السكن الطلابي","description":"نماذج أثاث السكن","image":"home-v23-46a25e1d4b-catalog-dormitory-detail.webp","url":"/products/dormitory/","alt":"نماذج أثاث السكن الطلابي من كتالوج WangLi"},
-      {"title":"المقاصف المدرسية","description":"طاولات وكراسٍ للمقصف","image":"home-v23-7cc9fac890-catalog-cafeteria-detail.webp","url":"/products/cafeteria/","alt":"نماذج طاولات وكراسٍ للمقاصف المدرسية من الكتالوج"},
-      {"title":"المختبرات","description":"خيارات للمرافق التعليمية","image":"home-v23-c8efa5dadc-catalog-laboratory-detail.webp","url":"/products/laboratory/","alt":"أثاث المختبرات المدرسية كما يعرضه كتالوج WangLi"}
+    "eyebrow": "مجموعة WangLi",
+    "title": "أثاث لكل مساحة تعليمية",
+    "description": "ابدأ من الفئة، ثم راجع الموديلات والمقاسات والخامات المتاحة لطلبك.",
+    "items": [
+      {
+        "title": "الفصول الدراسية",
+        "description": "طاولات وكراسٍ مدرسية",
+        "image": "home-v23-0bd9547d1c-catalog-classroom-detail.webp",
+        "url": "/products/classroom/",
+        "alt": "نماذج طاولات وكراسٍ مدرسية من كتالوج WangLi"
+      },
+      {
+        "title": "المحاضرات والتدريب",
+        "description": "كراسٍ مع ألواح كتابة",
+        "image": "home-v23-5140d5b569-catalog-lecture-detail.webp",
+        "url": "/products/lecture/",
+        "alt": "نماذج كراسي محاضرات بألواح كتابة من كتالوج WangLi"
+      },
+      {
+        "title": "رياض الأطفال",
+        "description": "أثاث للأنشطة والتعلم",
+        "image": "home-v23-3834e7a66c-catalog-kindergarten-detail.webp",
+        "url": "/products/kindergarten/",
+        "alt": "مجموعة أثاث رياض الأطفال من كتالوج WangLi"
+      },
+      {
+        "title": "السكن الطلابي",
+        "description": "نماذج أثاث السكن",
+        "image": "home-v23-46a25e1d4b-catalog-dormitory-detail.webp",
+        "url": "/products/dormitory/",
+        "alt": "نماذج أثاث السكن الطلابي من كتالوج WangLi"
+      },
+      {
+        "title": "المقاصف المدرسية",
+        "description": "طاولات وكراسٍ للمقصف",
+        "image": "home-v23-7cc9fac890-catalog-cafeteria-detail.webp",
+        "url": "/products/cafeteria/",
+        "alt": "نماذج طاولات وكراسٍ للمقاصف المدرسية من الكتالوج"
+      },
+      {
+        "title": "المختبرات",
+        "description": "خيارات للمرافق التعليمية",
+        "image": "home-v23-c8efa5dadc-catalog-laboratory-detail.webp",
+        "url": "/products/laboratory/",
+        "alt": "أثاث المختبرات المدرسية كما يعرضه كتالوج WangLi"
+      }
     ]
   },
   "buyers": {
-    "eyebrow":"ابدأ بالطريقة المناسبة لك",
-    "title":"مساران للشراء. نقطة بداية واضحة.",
-    "items":[
-      {"number":"01","title":"للموزعين وتجار الجملة","description":"كوّن تشكيلة تناسب عملاءك. راجع الموديلات والخامات ومحتويات الطقم، ثم حدّد الكميات ووجهة الشحن للمقارنة والتسعير.","image":"home-v23-factory-visit-showroom-03-preview.webp","alt":"نماذج أثاث تعليمي متعددة في صالة WangLi","url":"/school-furniture-wholesale/","label":"ابدأ طلب الجملة"},
-      {"number":"02","title":"لشركات توريد المشاريع","description":"ابدأ من جدول الكميات والمواصفات. اربط كل بند بالتكوين المطلوب، وحدّد الوثائق والنقاط التي تحتاج إلى تأكيد قبل تقديم عرضك.","image":"home-v23-factory-visit-welding-01-preview.webp","alt":"ورش تجهيز الهياكل المعدنية داخل مصنع WangLi","url":"/school-furniture-tender-supply/","label":"جهّز ملف المشروع"}
+    "eyebrow": "ابدأ بالطريقة المناسبة لك",
+    "title": "مساران للشراء. نقطة بداية واضحة.",
+    "items": [
+      {
+        "number": "01",
+        "title": "للموزعين وتجار الجملة",
+        "description": "كوّن تشكيلة تناسب عملاءك. راجع الموديلات والخامات ومحتويات الطقم، ثم حدّد الكميات ووجهة الشحن للمقارنة والتسعير.",
+        "image": "home-v23-factory-visit-showroom-03-preview.webp",
+        "alt": "نماذج أثاث تعليمي متعددة في صالة WangLi",
+        "url": "/school-furniture-wholesale/",
+        "label": "ابدأ طلب الجملة"
+      },
+      {
+        "number": "02",
+        "title": "لشركات توريد المشاريع",
+        "description": "ابدأ من جدول الكميات والمواصفات. اربط كل بند بالتكوين المطلوب، وحدّد الوثائق والنقاط التي تحتاج إلى تأكيد قبل تقديم عرضك.",
+        "image": "home-v23-factory-visit-welding-01-preview.webp",
+        "alt": "ورش تجهيز الهياكل المعدنية داخل مصنع WangLi",
+        "url": "/school-furniture-tender-supply/",
+        "label": "جهّز ملف المشروع"
+      }
     ]
   },
   "factory": {
-    "eyebrow":"المصنع وراء المنتج",
-    "title":"تعرف على WangLi من داخل الموقع",
-    "description":"شاهد المبنى وورش تشغيل المعادن وصالات عرض الأثاث. صور حقيقية تساعدك في التعرف على المصنع والمنتجات التي تريد مناقشتها مع الفريق.",
-    "image":"home-v23-factory-visit-exterior-02.webp",
-    "preview":"home-v23-factory-visit-exterior-02-preview.webp",
-    "alt":"المبنى ومدخل مصنع WangLi في الصين",
-    "caption":"صورة حقيقية من موقع WangLi في الصين",
-    "links":[{"title":"ورش الإنتاج وتجهيز الهياكل","url":"/factory/#factory-visit-production"},{"title":"صالة العرض ونماذج الأثاث","url":"/factory/#factory-visit-showroom"},{"title":"التعبئة ومناولة الحاويات","url":"/packing-and-shipping/"}]
+    "eyebrow": "المصنع وراء المنتج",
+    "title": "تعرف على WangLi من داخل الموقع",
+    "description": "شاهد المبنى وورش تشغيل المعادن وصالات عرض الأثاث. صور حقيقية تساعدك في التعرف على المصنع والمنتجات التي تريد مناقشتها مع الفريق.",
+    "image": "home-v23-factory-visit-exterior-02.webp",
+    "preview": "home-v23-factory-visit-exterior-02-preview.webp",
+    "alt": "المبنى ومدخل مصنع WangLi في الصين",
+    "caption": "صورة حقيقية من موقع WangLi في الصين",
+    "links": [
+      {
+        "title": "ورش الإنتاج وتجهيز الهياكل",
+        "url": "/factory/#factory-visit-production"
+      },
+      {
+        "title": "صالة العرض ونماذج الأثاث",
+        "url": "/factory/#factory-visit-showroom"
+      },
+      {
+        "title": "التعبئة ومناولة الحاويات",
+        "url": "/packing-and-shipping/"
+      }
+    ]
   },
   "catalog": {
-    "eyebrow":"من الاختيار إلى طلب واضح",
-    "title":"قائمة مشترياتك تبدأ من هنا",
-    "description":"استخدم الكتالوج لتحديد المنتجات، وراجع جداول المواصفات المتاحة، ثم اجمع المعلومات التي يحتاجها الفريق لمناقشة طلبك.",
-    "pdf":"/assets/4ac210b06e-wangli-school-furniture-catalog-en.pdf",
-    "spreadsheet":"/assets/f30ec4dc8c-wangli-school-furniture-specifications-ar.xlsx",
-    "steps":[{"number":"01","title":"اختر الفئة والموديل","text":"اسم المنتج أو مرجع من الكتالوج"},{"number":"02","title":"حدّد متطلباتك","text":"الكميات والمقاسات والخامات والوثائق"},{"number":"03","title":"أرسل وجهة التوريد","text":"بلد ومدينة الوصول والموعد المستهدف"}]
+    "eyebrow": "من الاختيار إلى طلب واضح",
+    "title": "قائمة مشترياتك تبدأ من هنا",
+    "description": "استخدم الكتالوج لتحديد المنتجات، وراجع جداول المواصفات المتاحة، ثم اجمع المعلومات التي يحتاجها الفريق لمناقشة طلبك.",
+    "pdf": "/assets/4ac210b06e-wangli-school-furniture-catalog-en.pdf",
+    "spreadsheet": "/assets/f30ec4dc8c-wangli-school-furniture-specifications-ar.xlsx",
+    "steps": [
+      {
+        "number": "01",
+        "title": "اختر الفئة والموديل",
+        "text": "اسم المنتج أو مرجع من الكتالوج"
+      },
+      {
+        "number": "02",
+        "title": "حدّد متطلباتك",
+        "text": "الكميات والمقاسات والخامات والوثائق"
+      },
+      {
+        "number": "03",
+        "title": "أرسل وجهة التوريد",
+        "text": "بلد ومدينة الوصول والموعد المستهدف"
+      }
+    ]
   },
-  "contact": {"eyebrow":"لنبدأ من احتياجك","title":"ما الأثاث الذي يحتاجه طلبك القادم؟","description":"أرسل الموديلات والكميات والوجهة، وأرفق مواصفات المشروع إن وجدت. يتابع الفريق معك التفاصيل التي تحتاج إلى تأكيد.","primary_label":"تواصل مع WangLi","primary_url":"https://www.wangliedu.com/contactus.html","secondary_label":"متجرنا على Alibaba.com","secondary_url":"https://zjwangli.en.alibaba.com/"}
+  "contact": {
+    "eyebrow": "الخطوة التالية: قائمة يمكن مناقشتها",
+    "title": "جهّز ملخص طلبك، ثم أرسله إلى الفريق",
+    "description": "اكتب المعلومات المتاحة. سنرتبها في ملخص يمكنك نسخه وإرساله عبر قنوات WangLi الحالية؛ التفاصيل غير المحددة تبقى واضحة للمراجعة.",
+    "primary_label": "تواصل مع WangLi",
+    "primary_url": "https://www.wangliedu.com/contactus.html",
+    "secondary_label": "متجرنا على Alibaba.com",
+    "secondary_url": "https://zjwangli.en.alibaba.com/",
+    "brief": {
+      "role_label": "صفتك في الطلب",
+      "role_options": [
+        "اختر صفتك",
+        "موزع أو تاجر جملة",
+        "شركة توريد مشاريع أو مناقصات"
+      ],
+      "product_label": "المنتج أو الموديل",
+      "product_placeholder": "اسم الفئة، الموديل، أو صفحة من الكتالوج",
+      "quantity_label": "الكميات",
+      "quantity_placeholder": "الكمية لكل بند، إن كانت محددة",
+      "destination_label": "وجهة التسليم",
+      "destination_placeholder": "الدولة والمدينة أو الميناء",
+      "notes_label": "متطلبات إضافية",
+      "notes_placeholder": "المقاسات، الخامات، الوثائق، أو الموعد المستهدف",
+      "generate_label": "أنشئ ملخص الطلب",
+      "copy_label": "انسخ الملخص",
+      "required_message": "أضف اسم المنتج أو الفئة أولًا، ولو بصورة مبدئية.",
+      "copied_message": "تم نسخ الملخص. افتح قناة التواصل المناسبة وأرسله إلى الفريق.",
+      "copy_failed_message": "يمكنك تحديد النص في خانة الملخص ونسخه يدويًا.",
+      "output_label": "ملخص جاهز للنسخ",
+      "channel_note": "بعد النسخ، أرسل الملخص عبر إحدى القنوات أدناه. لا يُرسل من هذه الصفحة تلقائيًا."
+    }
+  },
+  "why": {
+    "eyebrow": "لماذا تبدأ مع WangLi؟",
+    "title": "اختيار أوضح. ملف أدق. مصنع تعرفه.",
+    "description": "ثلاثة جوانب تجمعها في طلبك: المنتج الذي تختاره، والمعلومات التي تقارن بها، والمصنع الذي تناقش معه التوريد.",
+    "items": [
+      {
+        "id": "selection",
+        "number": "01",
+        "title": "قارن التكوين قبل مقارنة السعر",
+        "description": "ابدأ من منتج محدد بصوره وأبعاده وخاماته، ثم اربطه بالاستخدام والكمية المطلوبة. بذلك يكون نقاش السعر متعلقًا بتكوين معروف.",
+        "action_label": "راجع خيارات الطاولات والكراسي",
+        "action_url": "/products/classroom/",
+        "evidence": {
+          "kind": "product",
+          "eyebrow": "مثال فعلي من بيانات المنتج",
+          "title": "ZYTJ_02 · طقم بسطح HPL",
+          "image": "c689e0a57b-classroom-desk-wire-basket-1.jpg",
+          "alt": "طقم طاولة وكرسي WangLi ZYTJ_02 بسطح HPL كما يظهر في صفحة المنتج",
+          "facts": [
+            {
+              "label": "أبعاد الطاولة",
+              "value": "620 × 475 × 760 مم"
+            },
+            {
+              "label": "مادة سطح الطاولة",
+              "value": "HPL"
+            },
+            {
+              "label": "ارتفاع المقعد",
+              "value": "460 مم"
+            }
+          ],
+          "note": "هذه بيانات الموديل المذكور؛ تؤكد الألوان والتكوين والمواصفات النهائية في عرض السعر.",
+          "label": "افتح صفحة المنتج ومواصفاته",
+          "url": "/products/classroom-desk-wire-basket/"
+        }
+      },
+      {
+        "id": "technical",
+        "number": "02",
+        "title": "جهّز استفسارك الفني بندًا بندًا",
+        "description": "استخدم جداول المواصفات وقالب الاستجابة لربط بنود المشروع بالموديلات المقترحة، وسجّل الفروق والوثائق التي تحتاج إلى تأكيد قبل تجهيز عرضك.",
+        "action_label": "راجع مسار توريد المشاريع",
+        "action_url": "/school-furniture-tender-supply/",
+        "evidence": {
+          "kind": "documents",
+          "eyebrow": "ملفات متاحة للاستخدام",
+          "title": "مواصفات وقائمة استجابة فنية",
+          "files": [
+            {
+              "format": "XLSX",
+              "title": "جدول المواصفات بالعربية",
+              "description": "الأبعاد والخامات وبيانات المنتج المتاحة",
+              "url": "/assets/f30ec4dc8c-wangli-school-furniture-specifications-ar.xlsx"
+            },
+            {
+              "format": "CSV",
+              "title": "قالب الاستجابة الفنية",
+              "description": "مرجع البند والمطابقة والحالة والنقاط المفتوحة",
+              "url": "/assets/wangli-tender-technical-response-ar.csv"
+            }
+          ],
+          "note": "الجداول لا تحل محل تقرير اختبار. تراجع الوثائق لكل موديل وطلب، ويظل القبول لدى جهة المشروع.",
+          "label": "دليل قراءة المواصفات والأدلة",
+          "url": "/school-desk-chair-specifications/"
+        }
+      },
+      {
+        "id": "supplier",
+        "number": "03",
+        "title": "تعرّف على المصنع وناقش تفاصيل التوريد",
+        "description": "راجع صور الموقع والإنتاج والتعبئة، ثم حدّد الموديلات والوجهة ومتطلبات الاستلام. اسأل عن بيانات العبوات ومسؤوليات الشحن للطلب الذي تجهزه.",
+        "action_label": "شاهد جولة المصنع",
+        "action_url": "/factory/",
+        "evidence": {
+          "kind": "photos",
+          "eyebrow": "صور أصلية من WangLi",
+          "title": "الإنتاج وتجهيز المكونات",
+          "photos": [
+            {
+              "image": "home-v23-factory-visit-welding-01-preview.webp",
+              "alt": "ورش تجهيز الهياكل المعدنية داخل مصنع WangLi",
+              "caption": "ورش الإنتاج"
+            },
+            {
+              "image": "home-v23-packing-pallet-staging-preview.webp",
+              "alt": "هياكل أثاث مغلفة على منصات في منطقة التجهيز",
+              "caption": "التعبئة والمنصات"
+            }
+          ],
+          "note": "الصور تعرض المشاهد الظاهرة؛ بيانات التعبئة والتحميل والمدة تؤكد للطلب المحدد.",
+          "label": "افتح صور التعبئة والتحميل",
+          "url": "/packing-and-shipping/"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "قبل أن ترسل طلبك",
+    "title": "أربع نقاط تستحق توضيحًا مبكرًا",
+    "items": [
+      {
+        "question": "ما الحد الأدنى للطلب؟",
+        "answer": "يؤكد بحسب الموديل والتكوين والكمية. أرسل قائمة الأصناف والكميات المقترحة ووجهة التسليم للحصول على تفاصيل تخص طلبك."
+      },
+      {
+        "question": "كيف أحدد موعد التوريد؟",
+        "answer": "اذكر تاريخ الحاجة والموديلات والكميات والوجهة. تناقش مدة التجهيز والشحن ونقطة بدايتها، ويؤكد الموعد ضمن ترتيبات الطلب."
+      },
+      {
+        "question": "هل يشمل العرض الشحن والتركيب؟",
+        "answer": "حدد نقطة التسليم ونطاق الأعمال المطلوب. تراجع مسؤوليات الشحن والتخليص والتركيب وشروط التسليم في العرض التجاري الخاص بطلبك."
+      },
+      {
+        "question": "هل الوثائق مناسبة لمناقصتي؟",
+        "answer": "أرسل الموديل ونص المتطلب للتحقق من الوثائق المتاحة ونطاقها. شهادات نظم الإدارة لا تعني اعتماد كل منتج، والجهة المشترية هي التي تحدد متطلبات القبول."
+      }
+    ]
+  },
+  "mechanisms": {
+    "eyebrow": "كيف تبدأ طلبك؟",
+    "title": "من احتياج المدرسة إلى تفاصيل التوريد",
+    "items": [
+      {
+        "id": "range",
+        "title": "كوّن تشكيلة تناسب عملاءك",
+        "description": "اختر من أثاث الفصول والمحاضرات ورياض الأطفال والسكن والمقاصف والمختبرات. اجمع مراجع المنتجات والكميات في قائمة واحدة لتناقش تكوين كل بند.",
+        "visual_label": "تشكيلة من كتالوج WangLi",
+        "visual_kind": "range",
+        "points": [
+          "صور ومراجع تساعدك على اختيار الأصناف",
+          "المقاسات والخامات حسب الموديل"
+        ],
+        "action_label": "استكشف دليل الكتالوج",
+        "action_url": "/school-furniture-catalog/"
+      },
+      {
+        "id": "project",
+        "title": "اربط متطلبات المشروع بالمنتج المناسب",
+        "description": "ابدأ بجدول الكميات والمواصفات الفنية. قارن الموديل المقترح بالأبعاد والخامات المطلوبة، واترك البنود التي تحتاج إلى جواب واضحة قبل تجهيز العرض.",
+        "visual_label": "من البند إلى الموديل",
+        "visual_kind": "project",
+        "points": [
+          "قائمة مواصفات متاحة بالعربية",
+          "قالب للاستجابة الفنية والنقاط المفتوحة"
+        ],
+        "action_label": "ابدأ من متطلبات مشروعك",
+        "action_url": "/school-furniture-tender-supply/"
+      },
+      {
+        "id": "supply",
+        "title": "ناقش التوريد من المصنع إلى وجهتك",
+        "description": "حدد الموديلات والكميات وبلد ومدينة التسليم. راجع بيانات التعبئة ونطاق الشحن والموعد المستهدف مع الفريق، ليكون نطاق طلبك واضحًا.",
+        "visual_label": "الإنتاج والتعبئة من موقع WangLi",
+        "visual_kind": "supply",
+        "points": [
+          "صور من المصنع وتجهيز المكونات",
+          "بيانات الشحنة وشروطها حسب الطلب"
+        ],
+        "action_label": "راجع التعبئة والتحميل",
+        "action_url": "/packing-and-shipping/"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "WangLi عن قرب",
+    "title": "من صالة العرض إلى تجهيز الشحن",
+    "description": "جولة مصورة في المنتجات والورش والتعبئة. افتح المشهد الذي تريد التعرف عليه.",
+    "items": [
+      {
+        "title": "نماذج تختار منها",
+        "caption": "من صالة العرض",
+        "image": "factory-visit-showroom-07-preview.jpg",
+        "alt": "طاولات وكراسي متعددة في صالة WangLi",
+        "url": "/factory/#factory-visit-showroom"
+      },
+      {
+        "title": "تجهيز الهياكل المعدنية",
+        "caption": "ورش الإنتاج",
+        "image": "factory-visit-welding-01-preview.jpg",
+        "alt": "معدات وتجهيز هياكل معدنية في ورشة WangLi",
+        "url": "/factory/#factory-visit-production"
+      },
+      {
+        "title": "التعبئة وترتيب المنصات",
+        "caption": "تجهيز المكونات",
+        "image": "packing-pallet-staging-preview.jpg",
+        "alt": "هياكل مغلفة على منصات في منطقة التجهيز",
+        "url": "/packing-and-shipping/#packaging"
+      },
+      {
+        "title": "داخل موقع WangLi",
+        "caption": "المبنى ومدخل المصنع",
+        "image": "factory-visit-exterior-02-preview.jpg",
+        "alt": "مصنع WangLi ومدخل المبنى في الصين",
+        "url": "/factory/#factory-visit-exterior"
+      },
+      {
+        "title": "أثاث للمساحات التعليمية",
+        "caption": "من صالة العرض",
+        "image": "factory-visit-showroom-03-preview.jpg",
+        "alt": "نماذج أثاث رياض الأطفال والطاولات في صالة العرض",
+        "url": "/factory/#factory-visit-showroom"
+      },
+      {
+        "title": "ثني الأنابيب",
+        "caption": "ورش تجهيز الأجزاء",
+        "image": "factory-visit-tube-bending-01-preview.jpg",
+        "alt": "معدات ثني الأنابيب داخل مصنع WangLi",
+        "url": "/factory/#factory-visit-production"
+      },
+      {
+        "title": "مناولة وتجهيز الحمولات",
+        "caption": "منطقة التحميل",
+        "image": "shipping-forklift-pallet-preview.jpg",
+        "alt": "رافعة ومناولة منصات الأثاث في منطقة التحميل",
+        "url": "/packing-and-shipping/#loading"
+      },
+      {
+        "title": "تغليف المكونات",
+        "caption": "صور التعبئة",
+        "image": "packing-protected-parts-preview.jpg",
+        "alt": "مكونات أثاث محمية بالتغليف في صور WangLi",
+        "url": "/packing-and-shipping/#packaging"
+      }
+    ]
+  }
 }
