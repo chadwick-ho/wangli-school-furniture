@@ -32,6 +32,10 @@ def integrate_catalog(doc,builder):
 
 def integrate(doc,builder):
     data=json.loads((builder.ROOT/'content/home.json').read_text(encoding='utf-8'))
+    if (builder.ROOT/'content/home-layout.json').exists():
+        import home_redesign
+        home_redesign.integrate(doc,builder,data,certificate_wall)
+        return
     old=doc.select_one('#wangli-home-evidence') or doc.select_one('main .wl-hero');assert old
     old.replace_with(BeautifulSoup(hero(data),'html.parser'))
     old_certificates=doc.select_one('#wangli-home-certificates')

@@ -90,7 +90,7 @@ def integrate(doc,path):
         old=footer.select_one('#wangli-company-footer')
         if old:old.decompose()
         footer.append(BeautifulSoup('<div id="wangli-company-footer" class="wl-container">'+links()+'</div>','html.parser'))
-    if path in ['/','/about-wangli/','/school-furniture-tender-supply/','/school-furniture-wholesale/']:
+    if path in ['/about-wangli/','/school-furniture-tender-supply/','/school-furniture-wholesale/']:
         old=doc.select_one('#wangli-company-preview')
         if old:old.decompose()
         preview=json.loads((Path(__file__).resolve().parents[1]/'content/company.json').read_text(encoding='utf-8'))['factory_preview']

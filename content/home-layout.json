@@ -1,0 +1,62 @@
+{
+  "version": 23,
+  "hero": {
+    "eyebrow": "من مصنع WangLi في الصين",
+    "title": "أثاث مدرسي للموزعين وشركات توريد المشاريع",
+    "description": "طاولات وكراسٍ وأثاث للمساحات التعليمية. اختر التكوين المناسب، وحدّد متطلباتك، وابدأ طلب التوريد من المصنع.",
+    "primary_label": "اطلب عرض سعر",
+    "primary_url": "/request-a-quote/",
+    "secondary_label": "استكشف المنتجات",
+    "secondary_url": "#home-products",
+    "slides": [
+      {"id":"showroom","label":"صالة العرض","image":"home-v23-factory-visit-showroom-07.webp","preview":"home-v23-factory-visit-showroom-07-preview.webp","width":2400,"height":1350,"alt":"طاولات وكراسٍ مدرسية وكراسي محاضرات في صالة عرض WangLi","caption":"صالة عرض WangLi · نماذج للاختيار والمقارنة"},
+      {"id":"production","label":"داخل المصنع","image":"home-v23-factory-visit-welding-01.webp","preview":"home-v23-factory-visit-welding-01-preview.webp","width":2400,"height":1350,"alt":"معدات اللحام وتجهيز الهياكل في ورشة مصنع WangLi","caption":"من مصنع WangLi في الصين · ورشة تجهيز الهياكل"},
+      {"id":"factory","label":"تعرف على WangLi","image":"home-v23-factory-visit-exterior-02.webp","preview":"home-v23-factory-visit-exterior-02-preview.webp","width":2400,"height":1350,"alt":"واجهة مصنع WangLi ومدخل الموقع في الصين","caption":"مصنع WangLi في الصين · شاهد الجولة المصورة"}
+    ]
+  },
+  "proof": [
+    {"number":"01","title":"شاهد المصنع","description":"صور الموقع وورش الإنتاج","url":"/factory/","image":"home-v23-factory-visit-exterior-02-preview.webp","alt":"مبنى WangLi ومدخل المصنع"},
+    {"number":"02","title":"راجع الوثائق","description":"الأصول والنطاق والتواريخ","url":"/certificates/","image":"certificate-iso9001-preview.jpg","alt":"وثيقة نظام إدارة الجودة الخاصة بالشركة"},
+    {"number":"03","title":"تعرّف على التعبئة","description":"صور التجهيز والتحميل","url":"/packing-and-shipping/","image":"home-v23-packing-pallet-staging-preview.webp","alt":"هياكل أثاث مغلفة على منصات في المصنع"}
+  ],
+  "products": {
+    "eyebrow":"مجموعة WangLi",
+    "title":"أثاث لكل مساحة تعليمية",
+    "description":"ابدأ من الفئة، ثم راجع الموديلات والمقاسات والخامات المتاحة لطلبك.",
+    "items":[
+      {"title":"الفصول الدراسية","description":"طاولات وكراسٍ مدرسية","image":"home-v23-0bd9547d1c-catalog-classroom-detail.webp","url":"/products/classroom/","alt":"نماذج طاولات وكراسٍ مدرسية من كتالوج WangLi"},
+      {"title":"المحاضرات والتدريب","description":"كراسٍ مع ألواح كتابة","image":"home-v23-5140d5b569-catalog-lecture-detail.webp","url":"/products/lecture/","alt":"نماذج كراسي محاضرات بألواح كتابة من كتالوج WangLi"},
+      {"title":"رياض الأطفال","description":"أثاث للأنشطة والتعلم","image":"home-v23-3834e7a66c-catalog-kindergarten-detail.webp","url":"/products/kindergarten/","alt":"مجموعة أثاث رياض الأطفال من كتالوج WangLi"},
+      {"title":"السكن الطلابي","description":"نماذج أثاث السكن","image":"home-v23-46a25e1d4b-catalog-dormitory-detail.webp","url":"/products/dormitory/","alt":"نماذج أثاث السكن الطلابي من كتالوج WangLi"},
+      {"title":"المقاصف المدرسية","description":"طاولات وكراسٍ للمقصف","image":"home-v23-7cc9fac890-catalog-cafeteria-detail.webp","url":"/products/cafeteria/","alt":"نماذج طاولات وكراسٍ للمقاصف المدرسية من الكتالوج"},
+      {"title":"المختبرات","description":"خيارات للمرافق التعليمية","image":"home-v23-c8efa5dadc-catalog-laboratory-detail.webp","url":"/products/laboratory/","alt":"أثاث المختبرات المدرسية كما يعرضه كتالوج WangLi"}
+    ]
+  },
+  "buyers": {
+    "eyebrow":"ابدأ بالطريقة المناسبة لك",
+    "title":"مساران للشراء. نقطة بداية واضحة.",
+    "items":[
+      {"number":"01","title":"للموزعين وتجار الجملة","description":"كوّن تشكيلة تناسب عملاءك. راجع الموديلات والخامات ومحتويات الطقم، ثم حدّد الكميات ووجهة الشحن للمقارنة والتسعير.","image":"home-v23-factory-visit-showroom-03-preview.webp","alt":"نماذج أثاث تعليمي متعددة في صالة WangLi","url":"/school-furniture-wholesale/","label":"ابدأ طلب الجملة"},
+      {"number":"02","title":"لشركات توريد المشاريع","description":"ابدأ من جدول الكميات والمواصفات. اربط كل بند بالتكوين المطلوب، وحدّد الوثائق والنقاط التي تحتاج إلى تأكيد قبل تقديم عرضك.","image":"home-v23-factory-visit-welding-01-preview.webp","alt":"ورش تجهيز الهياكل المعدنية داخل مصنع WangLi","url":"/school-furniture-tender-supply/","label":"جهّز ملف المشروع"}
+    ]
+  },
+  "factory": {
+    "eyebrow":"المصنع وراء المنتج",
+    "title":"تعرف على WangLi من داخل الموقع",
+    "description":"شاهد المبنى وورش تشغيل المعادن وصالات عرض الأثاث. صور حقيقية تساعدك في التعرف على المصنع والمنتجات التي تريد مناقشتها مع الفريق.",
+    "image":"home-v23-factory-visit-exterior-02.webp",
+    "preview":"home-v23-factory-visit-exterior-02-preview.webp",
+    "alt":"المبنى ومدخل مصنع WangLi في الصين",
+    "caption":"صورة حقيقية من موقع WangLi في الصين",
+    "links":[{"title":"ورش الإنتاج وتجهيز الهياكل","url":"/factory/#factory-visit-production"},{"title":"صالة العرض ونماذج الأثاث","url":"/factory/#factory-visit-showroom"},{"title":"التعبئة ومناولة الحاويات","url":"/packing-and-shipping/"}]
+  },
+  "catalog": {
+    "eyebrow":"من الاختيار إلى طلب واضح",
+    "title":"قائمة مشترياتك تبدأ من هنا",
+    "description":"استخدم الكتالوج لتحديد المنتجات، وراجع جداول المواصفات المتاحة، ثم اجمع المعلومات التي يحتاجها الفريق لمناقشة طلبك.",
+    "pdf":"/assets/4ac210b06e-wangli-school-furniture-catalog-en.pdf",
+    "spreadsheet":"/assets/f30ec4dc8c-wangli-school-furniture-specifications-ar.xlsx",
+    "steps":[{"number":"01","title":"اختر الفئة والموديل","text":"اسم المنتج أو مرجع من الكتالوج"},{"number":"02","title":"حدّد متطلباتك","text":"الكميات والمقاسات والخامات والوثائق"},{"number":"03","title":"أرسل وجهة التوريد","text":"بلد ومدينة الوصول والموعد المستهدف"}]
+  },
+  "contact": {"eyebrow":"لنبدأ من احتياجك","title":"ما الأثاث الذي يحتاجه طلبك القادم؟","description":"أرسل الموديلات والكميات والوجهة، وأرفق مواصفات المشروع إن وجدت. يتابع الفريق معك التفاصيل التي تحتاج إلى تأكيد.","primary_label":"تواصل مع WangLi","primary_url":"https://www.wangliedu.com/contactus.html","secondary_label":"متجرنا على Alibaba.com","secondary_url":"https://zjwangli.en.alibaba.com/"}
+}
