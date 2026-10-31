@@ -100,6 +100,20 @@ def page(path,title,description,main,post=None,category=None):
     script=doc.new_tag('script',type='application/ld+json');script.string=json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('</','<\\/');doc.head.append(script)
     target=ROOT/path.lstrip('/')/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(str(doc),encoding='utf-8')
 
+def related_posts(post):
+    """Keep article navigation short and tied to the article's own references."""
+    selected=[]
+    by_path={p['path']:p for p in POSTS if p['slug']!=post['slug']}
+    by_slug={p['slug']:p for p in by_path.values()}
+    candidates=[by_slug[slug] for slug in post.get('related_slugs',[]) if slug in by_slug]
+    body=BeautifulSoup(post['body'],'html.parser')
+    candidates.extend(by_path[path] for a in body.find_all('a',href=True) if (path:=urlsplit(a['href']).path) in by_path)
+    candidates.extend(p for p in POSTS if p['slug']!=post['slug'] and p['category']==post['category'])
+    for candidate in candidates:
+        if candidate['slug'] not in {p['slug'] for p in selected}:selected.append(candidate)
+        if len(selected)==3:break
+    return selected
+
 def render_blog():
     # Remove previously generated articles when their Markdown is removed or drafted.
     active={p['path'] for p in POSTS}
@@ -117,7 +131,7 @@ def render_blog():
         main='<section class="wl-blog-hero"><div class="wl-container"><p class="wl-eyebrow"><a href="/blog/">المدونة</a></p><h1>'+info['name']+'</h1><p class="wl-lead">'+info['intro']+'</p>'+category_nav(cat)+'</div></section><section class="wl-section"><div class="wl-container wl-blog-grid">'+''.join(card(p) for p in items)+'</div></section>'
         page('/blog/'+cat+'/',info['name']+' | مدونة WangLi',info['intro'],main,category=cat)
     for post in POSTS:
-        main='<nav class="wl-breadcrumb wl-container" aria-label="مسار التنقل"><a href="/">الرئيسية</a> / <a href="/blog/">المدونة</a> / <a href="/blog/'+post['category']+'/">'+CATEGORIES[post['category']]['name']+'</a></nav><article class="wl-section wl-blog-article"><div class="wl-container wl-reading"><header><p class="wl-eyebrow">'+CATEGORIES[post['category']]['name']+'</p><h1>'+escape(post['title'])+'</h1><p class="wl-blog-byline">WangLi · <time datetime="'+post['published']+'">'+post['published'][:10]+'</time></p></header><img class="wl-blog-cover" src="'+post['image']+'" alt="'+escape(post['image_alt'],quote=True)+'" width="800" height="500" loading="eager" decoding="async" fetchpriority="high"><div class="wl-blog-prose">'+post['body']+'</div><aside class="wl-blog-related"><h2>مقالات ذات صلة</h2><ul>'+''.join('<li><a href="'+p['path']+'">'+escape(p['title'])+'</a></li>' for p in POSTS if p['slug']!=post['slug'])+'</ul><a href="/blog/">جميع مقالات المدونة</a></aside></div></article>'
+        main='<nav class="wl-breadcrumb wl-container" aria-label="مسار التنقل"><a href="/">الرئيسية</a> / <a href="/blog/">المدونة</a> / <a href="/blog/'+post['category']+'/">'+CATEGORIES[post['category']]['name']+'</a></nav><article class="wl-section wl-blog-article"><div class="wl-container wl-reading"><header><p class="wl-eyebrow">'+CATEGORIES[post['category']]['name']+'</p><h1>'+escape(post['title'])+'</h1><p class="wl-blog-byline">WangLi · <time datetime="'+post['published']+'">'+post['published'][:10]+'</time></p></header><img class="wl-blog-cover" src="'+post['image']+'" alt="'+escape(post['image_alt'],quote=True)+'" width="800" height="500" loading="eager" decoding="async" fetchpriority="high"><div class="wl-blog-prose">'+post['body']+'</div><aside class="wl-blog-related"><h2>مقالات ذات صلة</h2><ul>'+''.join('<li><a href="'+p['path']+'">'+escape(p['title'])+'</a></li>' for p in related_posts(post))+'</ul><a href="/blog/">جميع مقالات المدونة</a></aside></div></article>'
         if post.get('image_caption'):
             parsed=BeautifulSoup(main,'html.parser');cover=parsed.select_one('.wl-blog-cover')
             figure=parsed.new_tag('figure',attrs={'class':'wl-blog-cover-figure'+(' wl-blog-cover-diagram' if post.get('image_kind')=='diagram' else '')});cover.wrap(figure)
